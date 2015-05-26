@@ -11,8 +11,7 @@ require('config.php');
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>To Be Fruit</title>
 
 </head>
@@ -78,7 +77,7 @@ require('config.php');
 ?>
 
 
-                <option><?= $prod['Nom']; ?></option>
+                <option name="produit"><?= $prod['Nom']; ?></option>
                     <?php  }// endforeach; ?>
                     <option> Autre ... </option>
                     </select>
@@ -123,9 +122,9 @@ require('config.php');
 
     if(isset($_POST['register'])){
 
-            $sql = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['product'].'","'.$_POST['prix'].'",
+            $sql1 = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['Product'].'","'.$_POST['prix'].'",
                 "'.$_POST['poid'].'","'.$_POST['date'].'")';
-            $requet = $bdd->query($sql);
+            $requet1 = $bdd->query($sql1);
 
             echo  " <p>Votre annonce à été prise en compte</p>";
 
@@ -136,9 +135,9 @@ require('config.php');
     if(isset($_POST['registers'])){
 
 
-        $sql = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['product'].'","'.$_POST['prix'].'",
+        $sql2 = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['product'].'","'.$_POST['prix'].'",
                 "'.$_POST['poid'].'","'.$_POST['date'].'")';
-        $requet = $bdd->query($sql);
+        $requet2 = $bdd->query($sql2);
 
         echo "Votre demande d'échange à été prise en compte";
 
