@@ -6,7 +6,8 @@
  * Time: 21:27
  */
 ?>
-
+<link rel="stylesheet" href="style.css" type="text/css" />
+<meta charset="UTF-8">
 
 <table>
         <img class="logo" src="logo.png"/><br>
@@ -24,7 +25,7 @@
         <p><br>Nous sommes une association à but non lucratif. Notre objectif est d'offrir aux particuliers des fruits et légumes
                 bio de qualités. Nous prônons la convivialité et l'échange. Faites votre marché!</p>
         <div id="PC">
-            <img src="user168.png"><a href="Ident.php"> S'inscrire/S'identifier</a><br><br>
+            <img src="user168.png"><a href="connexion.php"> S'inscrire/S'identifier</a><br><br>
             <a href="LIEN" id="panier"><img src="add169.png"> Mon Panier</a>
         </div>
             <?php include('footer.php')?>

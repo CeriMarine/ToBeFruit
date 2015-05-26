@@ -13,7 +13,7 @@
             <a href=""><li><a href="Profil.php">PROFIL</a></li>
             <li><a href="Transaction.php">TRANSACTION</a></li>
             <li><a href="Annonces.php">ANNONCES</a></li>
-            <li><a href="#">FORUM</a></li>
+            <li><a href="fofo.php">FORUM</a></li>
             <li><a href="#">FAQ</a></li>
         </ul>
 
