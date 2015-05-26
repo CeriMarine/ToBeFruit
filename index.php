@@ -12,7 +12,7 @@
     <html>
 <head>
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
     <title>To Be Fruit</title>
     <?php
     include('header.php');

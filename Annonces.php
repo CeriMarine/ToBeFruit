@@ -7,9 +7,7 @@ require('config.php');
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="style.css" type="text/css" />
-    <link rel="stylesheet" src="style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>To Be Fruit</title>
 
 </head>

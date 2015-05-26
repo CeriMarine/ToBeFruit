@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
 /**
  * Created by PhpStorm.
  * User: Marine
@@ -12,7 +12,9 @@
         <img class="logo" src="logo.png"/><br>
     </table>
 
+<link rel="stylesheet" href="style.css" type="text/css" />
 
+<meta charset="UTF-8" />
 
 <div id="bandelogo">
 
@@ -27,7 +29,7 @@
             <img src="user168.png"><a href="Ident.php"> S'inscrire/S'identifier</a><br><br>
             <a href="LIEN" id="panier"><img src="add169.png"> Mon Panier</a>
         </div>
-            <?php include('footer.php')?>
+            <?php include('footer.php') ?>
     </table>
 
    </div>

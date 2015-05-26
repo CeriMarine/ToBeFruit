@@ -12,7 +12,7 @@ require('config.php');
 <html>
 <head>
 
-    <link rel="stylesheet" href="style.css" type="text/css" />
+
     <title>To Be Fruit</title>
     <?php
     include('header.php');
@@ -45,9 +45,11 @@ require('config.php');
                             </tr>
                         </table>
 
-                        <input type="submit" name="register" value="S'inscrire"/>
+                        <input type="submit" name="register" value="Se connecter"/>
 
                     </form></td>
+
+
                 <td><a href="LIEN" id="creer"></a><a href="Profil.php"> Creer Mon compte </a></td>
             </tr>
 

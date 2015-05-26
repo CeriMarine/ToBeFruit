@@ -10,13 +10,13 @@
 </div> <!--Fin du div de BaseSite "mybody"-->
 
 <div id="footer">
-    <b>Nous suivre: </b><a href="LIEN"> <img class="imgfoot" src="Images\facebook51.png"/></a>
-    <a href="LIEN"> <img class="imgfoot" src="Images\social136.png"/></a>
+    <b>Nous suivre: </b><a href="LIEN"> <img class="imgfoot" src="facebook51.png"/></a>
+    <a href="LIEN"> <img class="imgfoot" src="social136.png"/></a>
 
     <a href="LIEN">Privacy Policy</a>
     <a href="LIEN">Legal Terms</a>
 
-    <b>Contacter nous: </b><a href="LIEN"> <img class="imgfoot" src="Images\new89.png"/></a>
-    <a href="LIEN"> <img class="imgfoot" src="Images\question5.png"/></a>
+    <b>Contacter nous: </b><a href="LIEN"> <img class="imgfoot" src="new89.png"/></a>
+    <a href="LIEN"> <img class="imgfoot" src="question5.png"/></a>
 
 </div>
