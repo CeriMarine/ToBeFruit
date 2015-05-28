@@ -5,7 +5,7 @@ html{
 a{
     text-decoration: none;
     color:whitesmoke;
-   /* border-bottom: 1px dashed white;*/
+   border-bottom: 1px dashed white;
 
 }
 body{
@@ -21,12 +21,16 @@ body{
 
 .principal{
     background: linear-gradient(to bottom,black,grey,black);
-    min-height: 600px;
+    min-height: 590px;
+    max-height: 600px;
     width: 70%;
     opacity: 0.9;
     margin-left: 20%;
     box-shadow: 3px 2px 2px black;
     border-radius: 10px;
+    margin-top: 7%;
+    overflow-y: scroll ;
+
 
 }
 .principal tr{
@@ -71,7 +75,7 @@ body{
     width: 20%;
     left: 0;
     margin-left: 7.8%;
-    position:fixed;
+   position:fixed;
     /*
 
 
@@ -100,6 +104,8 @@ body{
     margin-top: -70px;
     text-align: center;
     width: 100%;
+    margin-top: -12%;
+
 
 }
 li{
@@ -197,4 +203,24 @@ div.annoncedefile a img {
 
 #are{
     /* float: left;*/
+}
+
+#inscrii{
+
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+#inscrii input{
+
+    width: 250px;
+    height: 30px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 10px;
+    background-color: rgba(255, 123, 217, 0.55);
+    outline:none; /* enleve carré bleu de selection*/
+    font-size: 16px;
+    padding-left: 10px;
 }
