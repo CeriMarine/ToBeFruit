@@ -15,8 +15,6 @@
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-<meta charset="UTF-8" />
-
 <div id="bandelogo">
 
     <table>
