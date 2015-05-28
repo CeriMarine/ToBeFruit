@@ -27,12 +27,12 @@ require('config.php');
 <div class="principal">
 <form action="Profil.php" method="post">
 
-    <table>
+    <table id="inscrii">
 
         <tr>
 
             <td><label for="login"><strong>Pseudo :</strong></label></td>
-            <td><input type="text" name="login" id="login"/></td>
+            <td><input type="text" name="login" id="login" required="required"/></td>
 
         </tr>
 
@@ -79,14 +79,14 @@ require('config.php');
         <tr>
 
             <td><label for="pass"><strong>Mot de passe :</strong></label></td>
-            <td><input type="password" name="pass" id="pass"/></td>
+            <td><input type="password" name="pass" id="pass" required/></td>
 
         </tr>
 
         <tr>
 
             <td><label for="pass2"><strong>Confirmez le mot de passe :</strong></label></td>
-            <td><input type="password" name="pass2" id="pass2"/></td>
+            <td><input type="password" name="pass2" id="pass2" required/></td>
         </tr>
 
 
@@ -110,19 +110,21 @@ $login=$_POST["login"];
                 "' . $_POST['firstame'] . '","' . $_POST['date'] . '","' . $_POST['Adress'] . '","' . $_POST['postal'] . '")';
             $requet = $bdd->query($sql);
 
-            echo "Votre inscription à été prise en compte";
+            echo "<p> Votre inscription à été prise en compte</p>";
         //}
            // else{
              //   echo "Votre Pseudo existe déja";
             //}
         }
 
-        else{
+        else {
             echo "les mots de passes ne sont pas les mêmes";
 
         }
     }
+
     ?>
+
 </div>
 
 </body>
