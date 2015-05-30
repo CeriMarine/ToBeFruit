@@ -7,11 +7,7 @@
  */
 $titre="Poster";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
 
 //On récupère la valeur de la variable action
@@ -104,7 +100,7 @@ switch($action)
         $query->CloseCursor();
 
         //Et un petit message
-        echo'<p>Votre message a bien été ajouté!<br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir à l index du forum<br />
+        echo'<p>Votre message a bien été ajouté!<br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir au forum<br />
         Cliquez <a href="./voirtopic.php?t='.$nouveautopic.'">ici</a> pour le voir</p>';
     }
 break; //Houra !
@@ -171,7 +167,7 @@ break; //Houra !
         $nbr_post = $data['topic_post']+1;
         $page = ceil($nbr_post / $nombreDeMessagesParPage);
         echo'<p>Votre message a bien été ajouté!<br /><br />
-        Cliquez <a href="./fofo.php">ici</a> pour revenir à l index du forum<br />
+        Cliquez <a href="./fofo.php">ici</a> pour revenir au forum<br />
         Cliquez <a href="./voirtopic.php?t='.$topic.'&amp;page='.$page.'#p_'.$nouveaupost.'">ici</a> pour le voir</p>';
     }//Fin du else
     break;
@@ -206,7 +202,7 @@ break; //Houra !
         $query->CloseCursor();
 
         echo'<p>Votre message a bien été envoyé!<br />
-    <br />Cliquez <a href="./fofo.php">ici</a> pour revenir à l index du
+    <br />Cliquez <a href="./fofo.php">ici</a> pour revenir au
     forum<br />
     <br />Cliquez <a href="./messagesprives.php">ici</a> pour retourner
     à la messagerie</p>';
@@ -245,7 +241,7 @@ break; //Houra !
             $query->CloseCursor();
 
             echo'<p>Votre message a bien été envoyé!
-       <br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir à l index du
+       <br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir au
        forum<br />
        <br />Cliquez <a href="./messagesprives.php">ici</a> pour retourner à
        la messagerie</p>';

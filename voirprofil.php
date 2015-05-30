@@ -8,11 +8,7 @@
 
 $titre="Profil";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
 
 //On récupère la valeur de nos variables passées par URL
@@ -37,8 +33,8 @@ switch($action)
        $data=$query->fetch();
 
        //On affiche les infos sur le membre
-       echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> -->
-       profil de '.stripslashes(htmlspecialchars($data['membre_pseudo']));
+      /* echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> -->
+       profil de '.stripslashes(htmlspecialchars($data['membre_pseudo']));*/
        echo'<h1>Profil de '.stripslashes(htmlspecialchars($data['membre_pseudo'])).'</h1>';
 
        echo'<img src="./images/avatars/'.$data['membre_avatar'].'"
@@ -48,18 +44,18 @@ switch($action)
        <a href="mailto:'.stripslashes($data['membre_email']).'">
        '.stripslashes(htmlspecialchars($data['membre_email'])).'</a><br />';
 
-       echo'<strong>MSN Messenger : </strong>'.stripslashes(htmlspecialchars($data['membre_msn'])).'<br />';
+       echo'<strong>Code Postal: </strong>'.stripslashes(htmlspecialchars($data['membre_localisation'])).'<br />';
 
-       echo'<strong>Site Web : </strong>
+       /*echo'<strong>Site Web : </strong>
        <a href="'.stripslashes($data['membre_siteweb']).'">'.stripslashes(htmlspecialchars($data['membre_siteweb'])).'</a>
-       <br /><br />';
+       <br /><br />';*/
 
        echo'Ce membre est inscrit depuis le
        <strong>'.date('d/m/Y',$data['membre_inscrit']).'</strong>
        et a posté <strong>'.$data['membre_post'].'</strong> messages
        <br /><br />';
-       echo'<strong>Localisation : </strong>'.stripslashes(htmlspecialchars($data['membre_localisation'])).'
-       </p>';
+       /*echo'<strong>Localisation : </strong>'.stripslashes(htmlspecialchars($data['membre_localisation'])).'
+       </p>';*/
        $query->CloseCursor();
        break;
 
@@ -81,7 +77,7 @@ switch($action)
             $query->bindValue(':id',$id,PDO::PARAM_INT);
             $query->execute();
             $data=$query->fetch();
-            echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> Modification du profil';
+            echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> --> Modification du profil';
             echo '<h1>Modifier son profil</h1>';
 
             echo '<form method="post" action="voirprofil.php?action=modifier" enctype="multipart/form-data">
@@ -100,25 +96,27 @@ switch($action)
         <input type="text" name="email" id="email"
         value="'.stripslashes($data['membre_email']).'" /><br />
 
-        <label for="msn">Votre adresse MSN :</label>
-        <input type="text" name="msn" id="msn"
+        <label for="adress">Adresse :</label>
+        <input type="text" name="adress" id="adress"
         value="'.stripslashes($data['membre_msn']).'" /><br />
 
-        <label for="website">Votre site web :</label>
-        <input type="text" name="website" id="website"
+
+        <fieldset><legend>Informations supplémentaires</legend>
+
+        <label for="date">Date de naissance :</label>
+        <input type="text" name="date" id="date"
         value="'.stripslashes($data['membre_siteweb']).'" /><br />
         </fieldset>
 
-        <fieldset><legend>Informations supplémentaires</legend>
-        <label for="localisation">Localisation :</label>
-        <input type="text" name="localisation" id="localisation"
+         <label for="CodePostal">Code Postal :</label>
+        <input type="text" name="CodePostal" id="CodePostal"
         value="'.stripslashes($data['membre_localisation']).'" /><br />
         </fieldset>
 
-        <fieldset><legend>Profil sur le forum</legend>
-        <label for="avatar">Changer votre avatar :</label>
+
+        <br /><label for="avatar">Changer votre avatar :</label>
         <input type="file" name="avatar" id="avatar" />
-        (Taille max : 10 ko)<br /><br />
+        (Taille max : 500 ko)<br /><br />
         <label><input type="checkbox" name="delete" value="Delete" />
         Supprimer l avatar</label>
         Avatar actuel :
@@ -202,10 +200,10 @@ switch($action)
             }
         }
         //Vérification de l’adresse MSN
-        if (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $msn) && !empty($msn)) {
+        /*if (!preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $msn) && !empty($msn)) {
             $msn_erreur = "Votre nouvelle adresse MSN n'a pas un format valide";
             $i++;
-        }
+        }*/
 
         //Vérification de la signature
         if (strlen($signature) > 200) {
@@ -252,7 +250,7 @@ switch($action)
 //------------------------------- 2e partie avec plus de retouche
 
 
-    echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> Modification du profil';
+    echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> --> Modification du profil';
     echo '<h1>Modification d\'un profil</h1>';
 
 
@@ -324,6 +322,10 @@ switch($action)
         echo'<p>Cette action est impossible</p>';
 
 } //Fin du switch
+
+//------------------------------------------
+
+
 ?>
 </div>
 </body>

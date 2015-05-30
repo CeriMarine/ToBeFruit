@@ -7,11 +7,7 @@
  */
 $titre="Voir un sujet";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 include("includes/functions_txt.php");
 echo'<div class="principal">';
 
@@ -36,7 +32,7 @@ $nombreDePages = ceil($totalDesMessages / $nombreDeMessagesParPage);
 
 // titre et l'éternel fil d'Ariane
 
-echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> -->
+echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> -->
 <a href="./voirforum.php?f='.$forum.'">'.stripslashes(htmlspecialchars($data['forum_name'])).'</a>
  --> <a href="./voirtopic.php?t='.$topic.'">'.stripslashes(htmlspecialchars($data['topic_titre'])).'</a>';
 echo '<h1>'.stripslashes(htmlspecialchars($data['topic_titre'])).'</h1><br /><br />';
@@ -98,7 +94,7 @@ if ($query->rowCount()<1)
 else
 {
     //Si tout roule on affiche notre tableau puis on remplit avec une boucle
-    ?><table>
+    ?><table class="tablefo" >
     <tr>
         <th class="vt_auteur"><strong>Auteurs</strong></th>
         <th class="vt_mess"><strong>Messages</strong></th>

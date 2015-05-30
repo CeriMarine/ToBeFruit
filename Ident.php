@@ -16,7 +16,6 @@ require('config.php');
     <title>To Be Fruit</title>
     <?php
     include('header.php');
-    include('nav.php');
 
     ?>
 </head>

@@ -9,11 +9,7 @@
 
 $titre="Connexion";
 include('header.php');
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
 
 ?>
@@ -65,9 +61,8 @@ else
             $_SESSION['level'] = $data['membre_rang'];
             $_SESSION['id'] = $data['membre_id'];
             $message = '<p>Bienvenue '.$data['membre_pseudo'].',
-			vous êtes maintenant connecté!</p>'
-			/*<p>Cliquez <a href="./fofo.php">ici</a>
-			pour revenir à la page d accueil</p>'*/;
+			vous êtes maintenant connecté!</p>';
+                echo'<meta http-equiv="refresh" content="1;URL=index.php">';
         }
                         // Acces pas OK !
         else

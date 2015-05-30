@@ -8,11 +8,7 @@
 
 $titre="Voir un forum";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
 
 //On récupère la valeur de f  (id du forum)
@@ -32,7 +28,7 @@ $nombreDePages = ceil($totalDesMessages / $nombreDeMessagesParPage);
                                             //Haut de page : nombre de pages, informations sur le visiteur.
 
 
-echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> -->
+echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> -->
 <a href="./voirforum.php?f='.$forum.'">'.stripslashes(htmlspecialchars($data['forum_name'])).'</a>';
 
 //Nombre de pages
@@ -91,7 +87,7 @@ $query->execute();
 if ($query->rowCount()>0)
 {
     ?>
-    <table>
+    <table class="tablefo">
         <tr>
             <th><img src="./images/annonce.gif" alt="Annonce" /></th>
             <th class="titre"><strong>Titre</strong></th>
@@ -164,7 +160,7 @@ $query->execute();
 if ($query->rowCount()>0)
 {
     ?>
-    <table>
+    <table class="tablefo">
         <tr>
             <th><img src="images/cat.png" alt="Message" /></th>
             <th class="titre"><strong>Titre</strong></th>

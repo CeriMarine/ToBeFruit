@@ -8,14 +8,8 @@
 
 $titre="Enregistrement";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
-
-echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> Enregistrement';
 
 if ($id!=0) erreur(ERR_IS_CO);
 
@@ -25,21 +19,23 @@ if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer 
 {
     echo '<h1>Inscription 1/2</h1>';
     echo '<form method="post" action="register.php" enctype="multipart/form-data">
+
 	<fieldset><legend>Identifiants</legend>
-	<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" /> (le pseudo doit contenir entre 3 et 15 caractères)<br />
-	<label for="password">* Mot de Passe :</label><input type="password" name="password" id="password" /><br />
-	<label for="confirm">* Confirmer le mot de passe :</label><input type="password" name="confirm" id="confirm" />
+	<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" required/> (le pseudo doit contenir entre 3 et 15 caractères)<br />
+	<label for="password">* Mot de Passe :</label><input type="password" name="password" id="password" required/><br />
+	<label for="confirm">* Confirmer le mot de passe :</label><input type="password" name="confirm" id="confirm" required/>
 	</fieldset>
+
 	<fieldset><legend>Contacts</legend>
-	<label for="email">* Votre adresse Mail :</label><input type="text" name="email" id="email" /><br />
-	<label for="msn">Votre adresse MSN :</label><input type="text" name="msn" id="msn" /><br />
-	<label for="website">Votre site web :</label><input type="text" name="website" id="website" />
+	<label for="email">* Votre E-mail :</label><input type="text" name="email" id="email" required/><br />
+	<!--Modiff--> <label for="adress">* Adresse </label><input type="text" name="adress" id="adress" required/><br />
 	</fieldset>
+
 	<fieldset><legend>Informations supplémentaires</legend>
-	<label for="localisation">Localisation :</label><input type="text" name="localisation" id="localisation" />
-	</fieldset>
-	<fieldset><legend>Profil sur le forum</legend>
-	<label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" />(Taille max : 500Ko)<br />
+	<!--Modiff--> <label for="date">* Date de naissance :</label><input type="text" name="date" id="date" required/><br />
+	<!--Modiff--> <label for="CodePostal">Code Postal :</label><input type="text" name="CodePostal" id="CodePostal" /><br />
+
+	<br /><label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" />(Taille max : 500Ko)<br />
 	<label for="signature">Signature :</label><textarea cols="40" rows="4" name="signature" id="signature">La signature est limitée à 200 caractères</textarea>
 	</fieldset>
 	<p>Les champs précédés d un * sont obligatoires</p>
@@ -127,12 +123,14 @@ if (!preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $email) ||
     $email_erreur2 = "Votre adresse E-Mail n'a pas un format valide";
     $i++;
 }
-//Vérification de l'adresse MSN
-if (!preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $msn) && !empty($msn))
+
+//Vérification de l'Adresse
+/*if (!preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $msn) && !empty($msn))
 {
     $msn_erreur = "Votre adresse MSN n'a pas un format valide";
     $i++;
-}
+}*/
+
 //Vérification de la signature
 if (strlen($signature) > 200)  //la longueur
 {

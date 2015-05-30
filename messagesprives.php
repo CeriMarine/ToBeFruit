@@ -9,12 +9,10 @@
 $titre="Messages Privés";
 $balises = true; // fait fonctionner le bbcode
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
+
 include("includes/functions_txt.php");
-//include("includes/menu.php");
+
 echo'<div class="principal">';
 
 $action = (isset($_GET['action']))?htmlspecialchars($_GET['action']):''; // action ds url
