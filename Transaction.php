@@ -18,7 +18,6 @@ require('config.php');
 <header>
     <?php
     include('header.php');
-    include('nav.php');
     ?>
 
 </header>

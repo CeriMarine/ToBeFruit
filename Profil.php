@@ -5,7 +5,7 @@
  * Date: 14/05/15
  * Time: 21:26
  */
-require('config.php');
+//require('config.php');
 
 ?>
 
@@ -19,7 +19,6 @@ require('config.php');
 <header>
     <?php
     include('header.php');
-    include('nav.php');
     ?>
 
 </header>

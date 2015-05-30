@@ -10,16 +10,12 @@
 //On donne ensuite un titre à la page, puis on appelle notre fichier debut.php
 $titre = "Index du forum";
 include("header.php");
-include('nav.php');
 
-/*include("includes/identifiants.php");
-include("includes/debut.php");*/
-//include("includes/menu.php");
 echo'<div class="principal">';
 
 
 //outil de navigation: fil d'Ariane
-echo '<i>Vous êtes ici : </i><a href ="fofofofo.php">Index du forum</a>';
+echo '<i>Vous êtes ici : </i><a href ="fofofofo.php">Forum</a>';
 ?>
 
     <h1>Forum</h1>
