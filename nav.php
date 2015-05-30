@@ -34,7 +34,7 @@ else{
                 <li><a href="Transaction.php">TRANSACTION</a></li>
                 <li><a href="Annonces.php">ANNONCES</a></li>
                 <li><a href="fofo.php">FORUM</a></li>
-                <li><a href="#">FAQ</a></li>
+                <li><a href="FAQ.php">FAQ</a></li>
                 <li><a href="deconnection.php">DECONNEXION</a></li>
         </ul>
 

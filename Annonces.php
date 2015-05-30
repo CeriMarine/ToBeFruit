@@ -27,9 +27,18 @@ require('config.php');
     $requet=$bdd->query($sql);
 
     while ($ann=$requet->fetch()){
-        ?> <p style="color:white;"><?= $ann['Product']?>;
-        <?= $ann['Description']; ?>
-        <?= $ann['Prix']; ?></p>
+        ?>
+
+        <div id="anoncadre">
+
+        <p><?= $ann['Product']; ?></p>
+        <p><?= $ann['Prix']; ?> €</p>
+        <p><?= $ann['Poids']; ?> Kg</p>
+        <p><?= $ann['Date']; ?></p>
+        <p><?= $ann['Description']; ?> </p>
+
+        </div>
+
     <?php
     }
 

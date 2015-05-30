@@ -8,6 +8,7 @@ a{
    border-bottom: 1px dashed white;
 
 }
+
 body{
     width: 79%;
     height: 100%;
@@ -134,7 +135,7 @@ p{
     color: whitesmoke;
     margin-left: 13px;
     margin-right: 10px;
-    font-family: sans-serif;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
 }
 #compte{
     padding-bottom: 10px;
@@ -212,6 +213,15 @@ div.annoncedefile a img {
     margin-left: auto;
 
 }
+form{
+
+    border:none!important;
+
+}
+#inscrii table, #inscrii td, #inscrii tr{
+
+    border: none;
+}
 
 #inscrii input{
 
@@ -219,8 +229,124 @@ div.annoncedefile a img {
     height: 30px;
     box-shadow: 2px 2px 2px black;
     border-radius: 10px;
-    background-color: rgba(255, 123, 217, 0.55);
+    background-color: rgba(255, 39, 66, 0.55);
     outline:none; /* enleve carré bleu de selection*/
     font-size: 16px;
     padding-left: 10px;
+}
+
+#anoncadre{
+
+    border: 2px solid white ;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+
+}
+.imagefruit{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.imagelegume{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fruit{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#legume{
+    margin-left: 10px;
+    margin-right: 10px;
+   margin-top: 10px;
+   /* margin-bottom: 30px;*/
+}
+#choix{
+
+    margin: auto;
+    padding-top: 70px;
+    border-radius: 10px;
+}
+
+#texteee{
+    text-align: center;
+    font-size: 28px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+}
+
+#boutonleg{
+    background: palegreen;
+    height: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    /*margin-top: 20px;*/
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+
+
+}
+
+#boutonfruit{
+    background: palegreen;
+    height: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+
+}
+
+#blanc{
+    background-color: whitesmoke;
+}
+
+#titre{
+    margin-bottom: 100px;
+}
+
+.imagefr{
+    width: 260px;
+    height: 139px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#boutonfr{
+    background: palegreen;
+    height: 50px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+}
+
+#ceriseee{
+
+    margin: auto;
+    padding-top: 70px;
+    border-radius: 10px;
+
 }

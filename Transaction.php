@@ -52,98 +52,107 @@ require('config.php');
 
 </div>-->
 
-
-    <form action="Transaction.php" method="post">
-
-
-        <table>
-
-            <tr>
-
-                <td><label for="description"><strong>Description :</strong></label></td>
-                <td><input type="text" name="description" id="description"/></td>
-
-            </tr>
-
-            <tr>
-                <td><label for="Product"><strong>Produit :</strong></label></td>
-                <td><select type="text" name="Product" id="Product"/>
-                    <option> Choisir </option>
-<?php
-                $sql='SELECT * FROM Product';
-                $requet=$bdd->query($sql);
-                while($prod=$requet->fetch()){
-
-?>
-
-
-                <option name="produit"><?= $prod['Nom']; ?></option>
-                    <?php  }// endforeach; ?>
-                    <option> Autre ... </option>
-                    </select>
-                </td>
-
-            </tr>
-
-            <tr>
-
-                <td><label for="prix"><strong>Prix :</strong></label></td>
-                <td><input type="text" name="prix" id="prix"/></td>
-
-            </tr>
-
-            <tr>
-
-                <td><label for="poid"><strong>Poids :</strong></label></td>
-                <td><input type="text" name="poid" id="poid"/></td>
-
-            </tr>
-
-            <tr>
-
-                <td><label for="date"><strong>Date de la ceuillette :</strong></label></td>
-                <td><input type="text" name="date" id="date"/></td>
-
-            </tr>
-
-
-
-
-        </table>
-
-        <input type="submit" name="register" value="Mettre en vente"/>
-
-        <input type="submit" name="registers" value="Proposer à l'échange"/>
-
-    </form>
-
     <?php
 
+    if($id==0){
+        erreur(ERR_IS_CO);
+    }
 
-    if(isset($_POST['register'])){
+    else {
 
-            $sql1 = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['Product'].'","'.$_POST['prix'].'",
-                "'.$_POST['poid'].'","'.$_POST['date'].'")';
+        ?>
+
+
+        <form action="Transaction.php" method="post">
+
+
+            <table>
+
+                <tr>
+
+                    <td><label for="description"><strong>Description :</strong></label></td>
+                    <td><input type="text" name="description" id="description"/></td>
+
+                </tr>
+
+                <tr>
+                    <td><label for="Product"><strong>Produit :</strong></label></td>
+                    <td><select type="text" name="Product" id="Product"/>
+                        <option> Choisir</option>
+                        <?php
+                        $sql = 'SELECT * FROM Product';
+                        $requet = $bdd->query($sql);
+                        while ($prod = $requet->fetch()) {
+
+                            ?>
+
+
+                            <option name="produit"><?= $prod['Nom']; ?></option>
+                        <?php }// endforeach;
+                        ?>
+                        <option> Autre ...</option>
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><label for="prix"><strong>Prix :</strong></label></td>
+                    <td><input type="text" name="prix" id="prix"/></td>
+
+                </tr>
+
+                <tr>
+
+                    <td><label for="poid"><strong>Poids :</strong></label></td>
+                    <td><input type="text" name="poid" id="poid"/></td>
+
+                </tr>
+
+                <tr>
+
+                    <td><label for="date"><strong>Date de la ceuillette :</strong></label></td>
+                    <td><input type="text" name="date" id="date"/></td>
+
+                </tr>
+
+
+            </table>
+
+            <input type="submit" name="register" value="Mettre en vente"/>
+
+            <input type="submit" name="registers" value="Proposer à l'échange"/>
+
+        </form>
+
+        <?php
+
+
+
+        if (isset($_POST['register'])) {
+
+            $sql1 = 'INSERT INTO annonce VALUES ("","' . $_POST['description'] . '","' . $_POST['Product'] . '","' . $_POST['prix'] . '",
+                "' . $_POST['poid'] . '","' . $_POST['date'] . '")';
             $requet1 = $bdd->query($sql1);
 
-            echo  " <p>Votre annonce à été prise en compte</p>";
+            echo " <p>Votre annonce à été prise en compte</p>";
+
+        }
+
+
+        if (isset($_POST['registers'])) {
+
+
+            $sql2 = 'INSERT INTO annonce VALUES ("","' . $_POST['description'] . '","' . $_POST['product'] . '","' . $_POST['prix'] . '",
+                "' . $_POST['poid'] . '","' . $_POST['date'] . '")';
+            $requet2 = $bdd->query($sql2);
+
+            echo "Votre demande d'échange à été prise en compte";
+
+        }
 
     }
-
-
-
-    if(isset($_POST['registers'])){
-
-
-        $sql2 = 'INSERT INTO annonce VALUES ("","'.$_POST['description'].'","'.$_POST['product'].'","'.$_POST['prix'].'",
-                "'.$_POST['poid'].'","'.$_POST['date'].'")';
-        $requet2 = $bdd->query($sql2);
-
-        echo "Votre demande d'échange à été prise en compte";
-
-    }
-
-
 
     ?>
 
