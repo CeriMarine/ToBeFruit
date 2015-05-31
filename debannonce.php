@@ -34,14 +34,14 @@ require('config.php');
             <tr id="blanc">
                 <td>
                     <div id="fruit">
-                        <img class="imagefruit" src="fruit.jpg">
-                        <center><input id="boutonfruit" type="submit" value="FRUITS"></center>
+                        <a href="SelectFruits.php"><img class="imagefruit" src="fruit.jpg"></a>
+                        <center><a href="SelectFruits.php"><input id="boutonfruit" type="submit" value="FRUITS"></center></a>
                     </div>
                 </td>
                 <td>
                     <div id="legume">
-                        <img class="imagelegume" src="légumes.jpg">
-                        <center><input id="boutonleg"  type="submit" value="LEGUMES"></center>
+                        <a href="SelectLegumes.php"><img class="imagelegume" src="légumes.jpg"></a>
+                        <center><a href="SelectLegumes.php"><input id="boutonleg"  type="submit" value="LEGUMES"></center></a>
                     </div>
                 </td>
             </tr>

@@ -70,7 +70,7 @@ require('config.php');
                 <tr>
 
                     <td><label for="description"><strong>Description :</strong></label></td>
-                    <td><input type="text" name="description" id="description"/></td>
+                    <td><textarea name="description" id="description"></textarea></td>
 
                 </tr>
 

@@ -307,3 +307,121 @@ label {
 .mp_titre { width:65%; }
 .mp_expediteur { width:10%; }
 .mp_time { width:20%; }
+
+
+
+#anoncadre{
+
+    border: 2px solid white ;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top : 20px;
+    margin-bottom: 20px;
+
+}
+.imagefruit{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.imagelegume{
+    width: 350px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fruit{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+#legume{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    /* margin-bottom: 30px;*/
+}
+#choix{
+
+    margin: auto;
+    padding-top: 70px;
+    border-radius: 10px;
+}
+
+#texteee{
+    text-align: center;
+    font-size: 28px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+}
+
+#boutonleg{
+    background: palegreen;
+    height: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    /*margin-top: 20px;*/
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+
+
+}
+
+#boutonfruit{
+    background: palegreen;
+    height: 50px;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+
+}
+
+#blanc{
+    background-color: whitesmoke;
+}
+
+#titre{
+    margin-bottom: 100px;
+}
+
+.imagefr{
+    width: 260px;
+    height: 139px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#boutonfr{
+    background: palegreen;
+    height: 50px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    box-shadow: 2px 2px 2px green;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Comic sans MS", Arial, Verdana, serif;
+}
+
+#ceriseee{
+
+    margin: auto;
+    padding-top: 70px;
+    border-radius: 10px;
+
+}
