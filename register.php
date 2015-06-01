@@ -17,11 +17,12 @@ if ($id!=0) erreur(ERR_IS_CO);
 
 if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer qu'on est sur la page de formulaire
 {
-    echo '<h1>Inscription 1/2</h1>';
+
+    echo '<div class="inscrii" class="meslabels1"> <h1>Inscription </h1>';
     echo '<form method="post" action="register.php" enctype="multipart/form-data">
 
 	<fieldset><legend>Identifiants</legend>
-	<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" required/> (le pseudo doit contenir entre 3 et 15 caractères)<br />
+	<label for="pseudo">* Pseudo :</label>  <input name="pseudo" type="text" id="pseudo" required/><br/> (le pseudo doit contenir entre 3 et 15 caractères)<br />
 	<label for="password">* Mot de Passe :</label><input type="password" name="password" id="password" required/><br />
 	<label for="confirm">* Confirmer le mot de passe :</label><input type="password" name="confirm" id="confirm" required/>
 	</fieldset>
@@ -29,17 +30,19 @@ if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer 
 	<fieldset><legend>Contacts</legend>
 	<label for="email">* Votre E-mail :</label><input type="text" name="email" id="email" required/><br />
 	<!--Modiff--> <label for="adress">* Adresse </label><input type="text" name="adress" id="adress" required/><br />
+	<!--Modiff--> <label for="CodePostal">* Code Postal :</label><input type="text" name="CodePostal" id="CodePostal" required=""/><br />
 	</fieldset>
 
 	<fieldset><legend>Informations supplémentaires</legend>
 	<!--Modiff--> <label for="date">* Date de naissance :</label><input type="text" name="date" id="date" required/><br />
-	<!--Modiff--> <label for="CodePostal">Code Postal :</label><input type="text" name="CodePostal" id="CodePostal" /><br />
 
-	<br /><label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" />(Taille max : 500Ko)<br />
+
+	<br /><label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" /><br />(Taille max : 500Ko)<br />
 	<label for="signature">Signature :</label><textarea cols="40" rows="4" name="signature" id="signature">La signature est limitée à 200 caractères</textarea>
 	</fieldset>
 	<p>Les champs précédés d un * sont obligatoires</p>
 	<p><input type="submit" value="S\'inscrire" /></p></form>
+	</div>
 	</div>
 	</body>
 	</html>';
@@ -72,9 +75,9 @@ else //Série de tests sinon message d'erreur
     $pseudo=$_POST['pseudo'];
     $signature = $_POST['signature'];
     $email = $_POST['email'];
-    $msn = $_POST['msn'];
-    $website = $_POST['website'];
-    $localisation = $_POST['localisation'];
+    $msn = $_POST['adress'];
+    $website = $_POST['date'];
+    $localisation = $_POST['CodePostal'];
     $pass = md5($_POST['password']);
     $confirm = md5($_POST['confirm']);
 

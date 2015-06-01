@@ -23,7 +23,7 @@ if ($id==0) {
         <li><a href="index.php">ACCUEIL</a></li>
         <a href="">
             <li><a href="Transaction.php">TRANSACTION</a></li>
-            <li><a href="debannonce.php">ANNONCES</a></li>
+            <li><a href="Annonces.php">ANNONCES</a></li>
             <li><a href="fofo.php">FORUM</a></li>
             <li><a href="#">FAQ</a></li>
     </ul>
@@ -52,7 +52,7 @@ if ($id==0) {
                     <a href="">
                         <li><a href="./voirprofil.php?m=<?php echo $id; ?>&action=consulter">PROFIL</a></li>
                         <li><a href="Transaction.php">TRANSACTION</a></li>
-                        <li><a href="debannonce.php">ANNONCES</a></li>
+                        <li><a href="Annonces.php">ANNONCES</a></li>
                         <li><a href="fofo.php">FORUM</a></li>
                         <li><a href="#">FAQ</a></li>
                 </ul>
