@@ -8,7 +8,7 @@ require('config.php');
 <html>
 <head>
 
-    <title>To Be Fruit</title>
+    <title>Annonces</title>
 
 </head>
 <header>
