@@ -98,8 +98,8 @@
       <file leaf-file-name="Ident.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ident.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8322325" vertical-offset="510" max-vertical-offset="1515">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.77278733" vertical-offset="510" max-vertical-offset="1515">
+              <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
               <folding>
                 <marker date="1432950677000" expanded="true" signature="1469:1524" placeholder="SELECT * FRO..Users..." />
               </folding>
@@ -362,7 +362,13 @@
       <option name="project" value="LOCAL" />
       <updated>1433147471294</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="troisieme commit">
+      <created>1433148023194</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1433148023194</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -927,8 +933,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Ident.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8322325" vertical-offset="510" max-vertical-offset="1515">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.77278733" vertical-offset="510" max-vertical-offset="1515">
+          <caret line="73" column="41" selection-start-line="73" selection-start-column="41" selection-end-line="73" selection-end-column="41" />
           <folding>
             <marker date="1432950677000" expanded="true" signature="1469:1524" placeholder="SELECT * FRO..Users..." />
           </folding>
