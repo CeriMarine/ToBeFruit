@@ -77,17 +77,18 @@ switch($action)
             $query->bindValue(':id',$id,PDO::PARAM_INT);
             $query->execute();
             $data=$query->fetch();
-            echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> --> Modification du profil';
+
             echo '<h1>Modifier son profil</h1>';
 
             echo '<form method="post" action="voirprofil.php?action=modifier" enctype="multipart/form-data">
 
+<div class="inscrii">
 
         <fieldset><legend>Identifiants</legend>
         Pseudo : <strong>'.stripslashes(htmlspecialchars($data['membre_pseudo'])).'</strong><br />
         <label for="password">Nouveau mot de Passe :</label>
         <input type="password" name="password" id="password" /><br />
-        <label for="confirm">Confirmer le mot de passe :</label>
+        <br/><label for="confirm">Confirmer le mot de passe :</label>
         <input type="password" name="confirm" id="confirm"  />
         </fieldset>
 
@@ -96,29 +97,28 @@ switch($action)
         <input type="text" name="email" id="email"
         value="'.stripslashes($data['membre_email']).'" /><br />
 
-        <label for="adress">Adresse :</label>
+        <br/><label for="adress">Adresse :</label>
         <input type="text" name="adress" id="adress"
         value="'.stripslashes($data['membre_msn']).'" /><br />
 
+         <br/><label for="CodePostal">Code Postal :</label>
+        <input type="text" name="CodePostal" id="CodePostal"
+        value="'.stripslashes($data['membre_localisation']).'" /><br />
+        </fieldset>
 
         <fieldset><legend>Informations supplémentaires</legend>
 
         <label for="date">Date de naissance :</label>
         <input type="text" name="date" id="date"
         value="'.stripslashes($data['membre_siteweb']).'" /><br />
-        </fieldset>
 
-         <label for="CodePostal">Code Postal :</label>
-        <input type="text" name="CodePostal" id="CodePostal"
-        value="'.stripslashes($data['membre_localisation']).'" /><br />
-        </fieldset>
 
 
         <br /><label for="avatar">Changer votre avatar :</label>
         <input type="file" name="avatar" id="avatar" />
         (Taille max : 500 ko)<br /><br />
-        <label><input type="checkbox" name="delete" value="Delete" />
-        Supprimer l avatar</label>
+        <label>
+        Supprimer l\'avatar<input id="supavatar" type="checkbox" name="delete" value="Delete" /></label>
         Avatar actuel :
         <img src="./images/avatars/'.$data['membre_avatar'].'"
         alt="pas d avatar" />
@@ -133,7 +133,10 @@ switch($action)
         <p>
         <input type="submit" value="Modifier son profil" />
         <input type="hidden" id="sent" name="sent" value="1" />
-        </p></form>';
+        </p>
+        </div>
+        </form>';
+
             $query->CloseCursor();
         }
 
@@ -160,9 +163,9 @@ switch($action)
         $temps = time();
         $signature = $_POST['signature'];
         $email = $_POST['email'];
-        $msn = $_POST['msn'];
-        $website = $_POST['website'];
-        $localisation = $_POST['localisation'];
+        $msn = $_POST['adress'];
+        $website = $_POST['date'];
+        $localisation = $_POST['CodePostal'];
         $pass = md5($_POST['password']);
         $confirm = md5($_POST['confirm']);
 
@@ -216,7 +219,7 @@ switch($action)
 
         if (!empty($_FILES['avatar']['size'])) {
             //On définit les variables :
-            $maxsize = 30072; //Poid de l'image
+            $maxsize = 500072; //Poid de l'image
             $maxwidth = 100; //Largeur de l'image
             $maxheight = 100; //Longueur de l'image
             //Liste des extensions valides
@@ -250,8 +253,8 @@ switch($action)
 //------------------------------- 2e partie avec plus de retouche
 
 
-    echo '<p><i>Vous êtes ici</i> : <a href="./fofo.php">Forum</a> --> Modification du profil';
-    echo '<h1>Modification d\'un profil</h1>';
+
+    echo '<h1>Modification de votre profil</h1>';
 
 
     if ($i == 0) // Si $i est vide, il n'y a pas d'erreur

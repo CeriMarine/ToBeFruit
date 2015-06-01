@@ -98,7 +98,7 @@ break;
                              /*New message (on fait appelle à la page postok)*/
 case "nouveau": //Nouveau mp
 
-    echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a> --> Ecrire un message</p>';
+    /*echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a> --> Ecrire un message</p>';*/
     echo '<h1>Nouveau message privé</h1><br /><br />';
     ?>
     <form method="post" action="postok.php?action=nouveaump" name="formulaire">
@@ -134,7 +134,7 @@ case "nouveau": //Nouveau mp
 //---------------------------
 
     case "repondre": //On veut répondre
-        echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a> --> Ecrire un message</p>';
+        /*echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a> --> Ecrire un message</p>';*/
         echo '<h1>Répondre à un message privé</h1><br /><br />';
 
         $dest = (int) $_GET['dest'];
@@ -220,8 +220,8 @@ case "nouveau": //Nouveau mp
     //Si rien n'est demandé ou s'il y a une erreur dans l'url
     //On affiche la boite de mp.
     default;
-
-    echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a>';
+/*
+    echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a>';*/
     echo '<h1>Messagerie Privée</h1><br /><br />';
 
     $query=$db->prepare('SELECT mp_lu, mp_id, mp_expediteur, mp_titre, mp_time, membre_id, membre_pseudo
@@ -276,8 +276,7 @@ case "nouveau": //Nouveau mp
             } //Fin du if
             else
             {
-                echo'<p>Vous n avez aucun message privé pour l instant, cliquez
-        <a href="./fofo.php">ici</a> pour revenir à la page d index</p>';
+                echo'<p>Vous n avez aucun message privé pour l instant</p>';
             }
             } //Fin du switch
             ?>
