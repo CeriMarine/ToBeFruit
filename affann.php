@@ -41,6 +41,7 @@ require('config.php');
             <p><?= $ann['Date']; ?></p>
             <p><?= $ann['Description']; ?> </p>
 
+            <input type="submit" id="achat" value="Acheter"/>
         </div>
 
     <?php } ?>
