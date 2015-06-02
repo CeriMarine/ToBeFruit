@@ -205,7 +205,7 @@ div.annoncedefile a img {
     /* float: left;*/
 }
 
-#inscrii{
+.inscrii{
 
     font-size: 20px;
     margin-right: auto;
@@ -213,10 +213,10 @@ div.annoncedefile a img {
 
 }
 
-#inscrii input{
+.inscrii input{
 
-    width: 250px;
-    height: 30px;
+    width: 180px;
+    height: 20px;
     box-shadow: 2px 2px 2px black;
     border-radius: 10px;
     background-color: rgba(255, 123, 217, 0.55);
@@ -225,6 +225,9 @@ div.annoncedefile a img {
     padding-left: 10px;
 }
 
+#supavatar{
+    width: 15px;
+}
 /*-------------------------Forum--------------------------------------*/
 
 #banniere
@@ -249,7 +252,7 @@ div.annoncedefile a img {
 
 #footer
 {
-    border: 1px solid black;
+  /* border: 1px solid black;*/
     width: 90%;
     margin-top: 50px;
     margin-left: 5%;
@@ -277,9 +280,9 @@ div.annoncedefile a img {
 
 /*---------------------------------*/
 
-label {
+.meslabels1, label {
     display:block;
-    width:150px;
+    width:200px;
     float:left;
 }
 /*---------------------------------*/
@@ -473,12 +476,4 @@ label {
     text-align:center;
     text-shadow:1px 5px 1px #810e05;
 }
-/*.:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
-    background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
-    background-color:#c62d1f;
-}.:active {
-     position:relative;
-     top:1px;
-}*/
+
