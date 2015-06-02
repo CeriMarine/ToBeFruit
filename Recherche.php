@@ -1,19 +1,19 @@
 <?php
 
-    $resultats="";
+   $resultats="";
     // Traitement de la Requête
     if(isset($_POST['query']) && !empty($_POST['query'])){
     // si l'utilisateur a entré quelque chose, on traite sa requête
 
         $query = preg_replace("#[^a-zA-Z ?0-9]#i","", $_POST['query']);
-        $sql = "SELECT membre_pseudo FROM  WHERE Contenu LIKE ?";
+        $sql = "SELECT membre_pseudo FROM membres WHERE membre_pseudo LIKE ?";
     }
 
-    //Connexion à la base de donnée
-    include("includes/search.php");
+   //Connexion à la base de donnée
+    include("includes/identifiants.php");
 
     $req = $db->prepare($sql);
-    $req->execute(array('%'.$query.'%', '%'.$query.'%'));
+    $req->execute(array('%'.$query.'%'));
 
     $count = $req->rowCount();
 
