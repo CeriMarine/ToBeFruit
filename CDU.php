@@ -10,7 +10,7 @@
 <html>
 <head>
     <link rel="stylesheet" src="style.css" type="text/css" />
-    <title>To Be Fruit</title>
+    <title>CDU</title>
 
 </head>
 <header>

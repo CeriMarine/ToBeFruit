@@ -12,7 +12,7 @@ require('config.php');
 <html>
 <head>
 
-    <title>To Be Fruit</title>
+    <title>Transaction</title>
 
 </head>
 <header>

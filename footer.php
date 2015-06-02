@@ -16,7 +16,7 @@
     <a href="CDU.php">Conditions d'utilisation</a><br>
 
 
-    <b>Contacter nous: </b> <a href="mailto:alexis.ung@isep.fr?Subject= Mot de passe oublié"> <img class="imgfoot" src="new89.png"/></a>
+    <b>Contacter nous: </b> <a href="Contacts.php"> <img class="imgfoot" src="new89.png"/></a>
     <a href="FAQ.php"> <img class="imgfoot" src="question5.png"/></a>
 
 </div>
