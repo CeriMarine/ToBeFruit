@@ -220,8 +220,8 @@ switch($action)
         if (!empty($_FILES['avatar']['size'])) {
             //On définit les variables :
             $maxsize = 500072; //Poid de l'image
-            $maxwidth = 100; //Largeur de l'image
-            $maxheight = 100; //Longueur de l'image
+            $maxwidth = 1000; //Largeur de l'image
+            $maxheight = 1000; //Longueur de l'image
             //Liste des extensions valides
             $extensions_valides = array('jpg', 'jpeg', 'gif', 'png', 'bmp');
 

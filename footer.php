@@ -7,13 +7,13 @@
  */
 ?>
 
-</div> <!--Fin du div de BaseSite "mybody"-->
+<!-- </div> Fin du div de BaseSite "mybody"-->
 
 <div id="footer">
     <b>Nous suivre: </b><a href="LIEN"> <img class="imgfoot" src="facebook51.png"/></a>
     <a href="LIEN"> <img class="imgfoot" src="social136.png"/></a>
 
-    <a href="LIEN">Privacy Policy</a>
+    <a href="LIEN">Privacy <Po></Po>licy</a>
     <a href="LIEN">Legal Terms</a>
 
     <b>Contacter nous: </b> <a href="mailto:alexis.ung@isep.fr?Subject= Mot de passe oublié"> <img class="imgfoot" src="new89.png"/></a>

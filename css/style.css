@@ -252,7 +252,7 @@ div.annoncedefile a img {
 
 #footer
 {
-    border: 1px solid black;
+  /* border: 1px solid black;*/
     width: 90%;
     margin-top: 50px;
     margin-left: 5%;
@@ -476,12 +476,4 @@ div.annoncedefile a img {
     text-align:center;
     text-shadow:1px 5px 1px #810e05;
 }
-.:hover {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
-    background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
-    background-color:#c62d1f;
-}.:active {
-     position:relative;
-     top:1px;
-}
+
