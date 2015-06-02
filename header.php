@@ -23,7 +23,7 @@ if ($id==0) {
         <li><a href="index.php">ACCUEIL</a></li>
             <li><a href="Annonces.php">ANNONCES</a></li>
             <li><a href="fofo.php">FORUM</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="FAQ.php">FAQ</a></li>
     </ul>
 
 </nav>
@@ -32,7 +32,7 @@ if ($id==0) {
 
     <table>
         <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-        <input id="search" type="search" placeholder="Rechercher un produit"/><br>
+        <input id="search" type="search" placeholder="Rechercher un membre"/><br>
 
         <h3><br>BIENVENUE !</h3>
         <p><br>Nous sommes une association à but non lucratif. Notre objectif est d'offrir aux particuliers des fruits et légumes
@@ -49,9 +49,9 @@ if ($id==0) {
                     <li><a href="index.php">ACCUEIL</a></li>
                         <li><a href="Monprofil.php">PROFIL</a></li>
                         <li><a href="Transaction.php">TRANSACTION</a></li>
-                        <li><a href="Annonces.php">ANNONCES</a></li>
+                        <li><a href="debannonce.php">ANNONCES</a></li>
                         <li><a href="fofo.php">FORUM</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="FAQ.php">FAQ</a></li>
                 </ul>
 
             </nav>
