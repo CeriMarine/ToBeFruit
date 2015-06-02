@@ -49,9 +49,9 @@ if ($id==0) {
                     <li><a href="index.php">ACCUEIL</a></li>
                         <li><a href="Monprofil.php">PROFIL</a></li>
                         <li><a href="Transaction.php">TRANSACTION</a></li>
-                        <li><a href="Annonces.php">ANNONCES</a></li>
+                        <li><a href="debannonce.php">ANNONCES</a></li>
                         <li><a href="fofo.php">FORUM</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="FAQ.php">FAQ</a></li>
                 </ul>
 
             </nav>
