@@ -30,7 +30,7 @@
 
 <div class="principal">
 
-    <h1>FAQ</h1>
+    <h1>Foire Aux Questions</h1>
 
 <dl>
     <dt><h3>Problème de connexion</h3></dt>
