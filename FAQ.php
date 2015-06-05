@@ -12,15 +12,12 @@
 <html>
 <meta charset="UTF-8">
 <head>
-    <link rel="stylesheet" src="style.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>FAQ</title>
 
 </head>
 <header>
     <?php
     include('header.php');
-    include('nav.php');
     ?>
 
 </header>
