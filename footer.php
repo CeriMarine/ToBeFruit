@@ -17,6 +17,6 @@
 
 
     <b>Contacter nous: </b> <a href="Contacts.php"> <img class="imgfoot" src="new89.png"/></a>
-    <a href="FAQ.php"> <img class="imgfoot" src="question5.png"/></a>
+    <a href="faq1.php"> <img class="imgfoot" src="question5.png"/></a>
 
 </div>

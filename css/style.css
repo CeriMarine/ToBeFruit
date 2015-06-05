@@ -125,6 +125,10 @@ li:hover{
     padding-top: 17px;
     padding-bottom: 17px;
 }
+h1{
+    color: ghostwhite;
+    text-align: center;
+}
 h3{
     color: greenyellow;
     text-align: center;
