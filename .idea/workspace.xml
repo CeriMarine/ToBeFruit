@@ -2,9 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bb2416f6-bc60-4847-9bcb-a65d5cbf08ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CDU.php" afterPath="$PROJECT_DIR$/CDU.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SelectFruits.php" afterPath="$PROJECT_DIR$/SelectFruits.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SelectLegumes.php" afterPath="$PROJECT_DIR$/SelectLegumes.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Petits Pois.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Poivron.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/abricot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/asperge.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/aubergine.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/betterave.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/brocolis.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/carottes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/carrot.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cerise.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/citron.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/concombre.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/courgette.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fraise.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/fruit.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/légumes.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myrtille.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poire.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pomme.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pommedeterre.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/raisins.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rhubarbe.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/salade.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tomate.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ToBeFruit.iws" />
@@ -77,9 +98,11 @@
       <file leaf-file-name="CDU.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CDU.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="88.0" vertical-offset="2484" max-vertical-offset="4482">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="88.0" vertical-offset="2520" max-vertical-offset="4518">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#88#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +112,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="31.333334" vertical-offset="1116" max-vertical-offset="2448">
               <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-              <folding />
+              <folding>
+                <element signature="e#6#86#0#PHP" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -119,8 +144,8 @@
       <file leaf-file-name="FAQ.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FAQ.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="10.0" vertical-offset="414" max-vertical-offset="1476">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state vertical-scroll-proportion="10.0" vertical-offset="432" max-vertical-offset="1512">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
                 <element signature="e#6#86#0#PHP" expanded="false" />
               </folding>
@@ -150,36 +175,28 @@
         <option value="$PROJECT_DIR$/includes/functions.php" />
         <option value="$PROJECT_DIR$/deconnection.php" />
         <option value="$PROJECT_DIR$/includes/debut.php" />
+        <option value="$PROJECT_DIR$/config.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/css/design.css" />
         <option value="$PROJECT_DIR$/nav.php" />
         <option value="$PROJECT_DIR$/deconnexion.php" />
         <option value="$PROJECT_DIR$/voirtopic.php" />
         <option value="$PROJECT_DIR$/Transaction.php" />
+        <option value="$PROJECT_DIR$/postok.php" />
         <option value="$PROJECT_DIR$/poster.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Ident.php" />
+        <option value="$PROJECT_DIR$/FAQ.php" />
         <option value="$PROJECT_DIR$/connexion.php" />
         <option value="$PROJECT_DIR$/Profil.php" />
+        <option value="$PROJECT_DIR$/fofo.php" />
+        <option value="$PROJECT_DIR$/messagesprives.php" />
         <option value="$PROJECT_DIR$/Monprofil.php" />
         <option value="$PROJECT_DIR$/voirforum.php" />
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/voirprofil.php" />
-        <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/fofo.php" />
-        <option value="$PROJECT_DIR$/postok.php" />
         <option value="$PROJECT_DIR$/register.php" />
-        <option value="$PROJECT_DIR$/messagesprives.php" />
-        <option value="$PROJECT_DIR$/includes/identifiants.php" />
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/affann.php" />
-        <option value="$PROJECT_DIR$/Annonces.php" />
-        <option value="$PROJECT_DIR$/FAQ.php" />
-        <option value="$PROJECT_DIR$/debannonce.php" />
-        <option value="$PROJECT_DIR$/CDU.php" />
-        <option value="$PROJECT_DIR$/SelectFruits.php" />
-        <option value="$PROJECT_DIR$/SelectLegumes.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/voirprofil.php" />
+        <option value="$PROJECT_DIR$/header.php" />
       </list>
     </option>
   </component>
@@ -455,62 +472,12 @@
       <option name="project" value="LOCAL" />
       <updated>1433147620972</updated>
     </task>
-    <task id="LOCAL-00006" summary="moi 1.3">
-      <created>1433149923321</created>
-      <option name="number" value="00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1433149923321</updated>
-    </task>
-    <task id="LOCAL-00007" summary="patate 1.3">
-      <created>1433149969368</created>
-      <option name="number" value="00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1433149969368</updated>
-    </task>
-    <task id="LOCAL-00008" summary="patate 1.4">
-      <created>1433150597192</created>
-      <option name="number" value="00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1433150597192</updated>
-    </task>
-    <task id="LOCAL-00009" summary="patate 1.4">
-      <created>1433254504852</created>
-      <option name="number" value="00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1433254504852</updated>
-    </task>
-    <task id="LOCAL-00010" summary="banane 1.1">
-      <created>1433494645887</created>
-      <option name="number" value="00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1433494645887</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="6" />
     <servers />
-  </component>
-  <component name="TodoView" selected-index="0">
-    <todo-panel id="selected-file">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
-    <todo-panel id="default-changelist">
-      <are-packages-shown value="false" />
-      <are-modules-shown value="false" />
-      <flatten-packages value="false" />
-      <is-autoscroll-to-source value="false" />
-    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="-3" width="1382" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33931485" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -520,7 +487,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2655068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952693" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32626426" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -577,10 +544,7 @@
     <MESSAGE value="moi" />
     <MESSAGE value="moi 1.1" />
     <MESSAGE value="moi 1.3" />
-    <MESSAGE value="patate 1.3" />
-    <MESSAGE value="patate 1.4" />
-    <MESSAGE value="banane 1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="banane 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="moi 1.3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1078,8 +1042,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FAQ.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="10.0" vertical-offset="414" max-vertical-offset="1476">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state vertical-scroll-proportion="10.0" vertical-offset="432" max-vertical-offset="1512">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
             <element signature="e#6#86#0#PHP" expanded="false" />
           </folding>
@@ -1096,9 +1060,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CDU.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="88.0" vertical-offset="2484" max-vertical-offset="4482">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="88.0" vertical-offset="2520" max-vertical-offset="4518">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#88#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1114,7 +1080,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="31.333334" vertical-offset="1116" max-vertical-offset="2448">
           <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
-          <folding />
+          <folding>
+            <element signature="e#6#86#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
