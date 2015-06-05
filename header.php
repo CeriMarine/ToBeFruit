@@ -51,7 +51,7 @@ if ($id==0) {
                         <li><a href="Transaction.php">TRANSACTION</a></li>
                         <li><a href="debannonce.php">ANNONCES</a></li>
                         <li><a href="fofo.php">FORUM</a></li>
-                        <li><a href="FAQ.php">FAQ</a></li>
+                        <li><a href="faq1.php">FAQ</a></li>
                 </ul>
 
             </nav>
