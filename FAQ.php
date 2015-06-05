@@ -76,7 +76,9 @@
         par exemple dans une sauce ou un fourrage représentant moins de 25 % du produit; ou encore, <br>
         sous la forme de « traces », que l'on peut trouver par exemple dans un produit ne contenant normalement pas d'allergènes,<br>
         mais fabriqué dans un atelier où d'autres produits en contiennent.
-    </p>
+
+
+
 </div>
 </body>
 <footer>

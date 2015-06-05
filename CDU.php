@@ -9,12 +9,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="style.css" type="text/css" />
+
     <title>CDU</title>
+    <link rel="stylesheet" href="css\style.css" type="text/css" />
 
 </head>
 <header>
     <?php
+    echo file_exists('header.php');
     include('header.php');
     ?>
 
