@@ -16,7 +16,6 @@
 </head>
 <header>
     <?php
-    echo file_exists('header.php');
     include('header.php');
     ?>
 

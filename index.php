@@ -118,13 +118,6 @@
 
         }
     </script>
-
-</head>
-
-<header>
-
-
-</header>
 <body>
 <div class="principal">
     <br>
