@@ -9,7 +9,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>To Be Fruit</title>
+    <link rel="stylesheet" src="style.css" type="text/css" />
+    <title>CDU</title>
 
 </head>
 <header>
