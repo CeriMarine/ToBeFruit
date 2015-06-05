@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" src="style.css" type="text/css" />
+
     <title>CDU</title>
 
 </head>
