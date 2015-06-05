@@ -38,9 +38,9 @@ if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer 
 
 
 	<br /><label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" /><br />(Taille max : 500Ko)<br />
-	<label for="signature">Signature :</label><textarea cols="40" rows="4" name="signature" id="signature">La signature est limitée à 200 caractères</textarea>
+	<label for="signature">Signature :</label><textarea cols="40" rows="4" name="signature" id="signature" placeholder="La signature est limitée à 200 caractères"></textarea>
 	</fieldset>
-	<p>Les champs précédés d un * sont obligatoires</p>
+	<p>Les champs précédés d\' un * sont obligatoires</p>
 	<p><input type="submit" value="S\'inscrire" /></p></form>
 	</div>
 	</div>

@@ -15,7 +15,7 @@ echo'<div class="principal">';
 
 
 //outil de navigation: fil d'Ariane
-echo '<i>Vous êtes ici : </i><a href ="fofofofo.php">Forum</a>';
+echo '<i>Vous êtes ici : </i><a href ="fofo.php">Forum</a>';
 ?>
 
     <h1>Forum</h1>

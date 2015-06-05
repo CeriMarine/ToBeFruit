@@ -100,7 +100,7 @@ switch($action)
         $query->CloseCursor();
 
         //Et un petit message
-        echo'<p>Votre message a bien été ajouté!<br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir au forum<br />
+        echo'<p>Votre message a bien été ajouté!<br /><br />
         Cliquez <a href="./voirtopic.php?t='.$nouveautopic.'">ici</a> pour le voir</p>';
     }
 break; //Houra !
@@ -167,7 +167,7 @@ break; //Houra !
         $nbr_post = $data['topic_post']+1;
         $page = ceil($nbr_post / $nombreDeMessagesParPage);
         echo'<p>Votre message a bien été ajouté!<br /><br />
-        Cliquez <a href="./fofo.php">ici</a> pour revenir au forum<br />
+
         Cliquez <a href="./voirtopic.php?t='.$topic.'&amp;page='.$page.'#p_'.$nouveaupost.'">ici</a> pour le voir</p>';
     }//Fin du else
     break;
@@ -192,18 +192,17 @@ break; //Houra !
 
         $query=$db->prepare('INSERT INTO forum_mp
     (mp_expediteur, mp_receveur, mp_titre, mp_text, mp_time, mp_lu)
-    VALUES(:id, :dest, :titre, :txt, :tps, ?)');
+    VALUES(:id, :dest, :titre, :txt, :tps, 0)');
         $query->bindValue(':id',$id,PDO::PARAM_INT);
         $query->bindValue(':dest',$dest,PDO::PARAM_INT);
         $query->bindValue(':titre',$titre,PDO::PARAM_STR);
         $query->bindValue(':txt',$message,PDO::PARAM_STR);
         $query->bindValue(':tps',$temps,PDO::PARAM_INT);
-        $query->execute(0);
+        $query->execute();
         $query->CloseCursor();
 
         echo'<p>Votre message a bien été envoyé!<br />
-    <br />Cliquez <a href="./fofo.php">ici</a> pour revenir au
-    forum<br />
+
     <br />Cliquez <a href="./messagesprives.php">ici</a> pour retourner
     à la messagerie</p>';
 
@@ -241,8 +240,7 @@ break; //Houra !
             $query->CloseCursor();
 
             echo'<p>Votre message a bien été envoyé!
-       <br /><br />Cliquez <a href="./fofo.php">ici</a> pour revenir au
-       forum<br />
+       <br />
        <br />Cliquez <a href="./messagesprives.php">ici</a> pour retourner à
        la messagerie</p>';
         }
