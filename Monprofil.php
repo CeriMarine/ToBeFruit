@@ -31,6 +31,8 @@ echo'<p><strong>Adresse E-Mail : </strong>
 echo'<strong>Adresse :</strong>'.stripslashes(htmlspecialchars($data['membre_msn'])).'<br />
 <strong>Date de naissance :</strong>'.stripslashes(htmlspecialchars($data['membre_siteweb'])).'<br />
 <strong>Signature: </strong>'.stripslashes(htmlspecialchars($data['membre_signature'])).'<br />
+<br>
+
 <a href="messagesprives.php">Mes messages privés</a><br />';
 
 
