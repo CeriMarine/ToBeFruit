@@ -91,11 +91,37 @@ if ($id==0) {
             <div id="bandelogo">
 
                 <table>
-                    <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-                    <input id="search" type="search" placeholder="Taper votre recherche"/>
-                    <input type="submit" name="submit" value="Go!"><br><br>
+                    <?php
+
+                    include 'functions.php';
+
+
+                    ?>
+                    <form action="" method="post">
+                        <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
+                        <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
+                        <input type="submit" name="submit" value="Go!"><br>
+                    </form>
 
                     <?php
+
+                    if(isset($_POST['search'])){
+                        echo "-";
+                        $search = addslashes(htmlspecialchars(trim($_POST['search'])));
+
+                        if(empty($search)){
+
+                            echo '<span class="erreur">Veuillez remplir ce champ</span>';
+                        } else if(strlen($search)==1){
+
+                            echo '<span class="erreur">Votre mot-clé de recherche est trop court</span>';
+                        } else{
+
+                            results($search);
+
+                        }
+
+                    }
 
 
                     ?>
