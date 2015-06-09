@@ -5,7 +5,7 @@ html{
 a{
     text-decoration: none;
     color:whitesmoke;
-   border-bottom: 1px dashed white;
+   /*border-bottom: 1px dashed white;*/
 
 }
 body{
@@ -40,10 +40,13 @@ body{
     text-align: center;
 }
 .principal1 p{
-    text-align: right;
+    text-align: left;
+    margin-left: 45%;
+    margin-top: -20%;
 }
 .principal2 p{
     text-align: center;
+    margin-top: 7%;
 }
 #annoncedefile{
     height: 470px;
@@ -487,3 +490,17 @@ div.annoncedefile a img {
     text-shadow:1px 5px 1px #810e05;
 }
 
+.photoprofil{
+    width: 200px;
+    margin-left: 2%;
+}
+
+.phototopic{
+    width: 100px;
+    margin-left: 2%;
+}
+
+.photoaccueil {
+    width: 300px;
+    margin-left: 2%;
+}

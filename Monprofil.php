@@ -21,33 +21,33 @@ $data=$query->fetch();
 echo'<div class="principal">';
 echo'<h1>Profil de '.stripslashes(htmlspecialchars($data['membre_pseudo'])).'</h1>';
 
-echo'<img src="./images/avatars/'.$data['membre_avatar'].'"
+echo'<img class="photoprofil" src="./images/avatars/'.$data['membre_avatar'].'"
        alt="Ce membre n a pas d avatar" />';
 
 echo'<div class="principal1">';
-echo'<p align="right"><strong>Adresse E-Mail : </strong>
+echo'<p align="right"><strong><font color="#ffb6c1">Adresse E-Mail : </font></strong>
        <a href="mailto:'.stripslashes($data['membre_email']).'">
-       <i><b><font color="red" >'.stripslashes(htmlspecialchars($data['membre_email'])).'</font></b></i></a><br />';
+       <i><b><font color="ghostwhite">'.stripslashes(htmlspecialchars($data['membre_email'])).'</font></b></i></a><br />';
 
-echo'<strong>Adresse : </strong>'.stripslashes(htmlspecialchars($data['membre_msn'])).'<br />
-<strong>Date de naissance : </strong>'.stripslashes(htmlspecialchars($data['membre_siteweb'])).'<br />
-<strong>Signature : </strong>'.stripslashes(htmlspecialchars($data['membre_signature'])).'<br />
+echo'<strong><font color="#ffb6c1">Adresse : </font></strong>'.stripslashes(htmlspecialchars($data['membre_msn'])).'<br />
+<strong><font color="#ffb6c1">Date de naissance : </font></strong>'.stripslashes(htmlspecialchars($data['membre_siteweb'])).'<br />
+<strong><font color="#ffb6c1">Signature : </font></strong>'.stripslashes(htmlspecialchars($data['membre_signature'])).'<br />
 <br></div>';?>
 
-
+<div class="principal2">
 <p><a href="voirprofil.php?m= <?php echo $id; ?>&action=modifier"><input type="submit" name="modifier les informations" value="modifier les informations" /></a><br>
 <?php
-echo'<a href="messagesprives.php">Mes messages privés</a><br />';
+echo'<a href="messagesprives.php"><font color="#5f9ea0">Mes messages privés</font></a><br>';
 
-
+echo'<br>';
 echo'Vous êtes inscrit depuis le
        <strong>'.date('d/m/Y',$data['membre_inscrit']).'</strong>
        et vous avez posté <strong>'.$data['membre_post'].'</strong> messages
        <br /><br />'
     ?>
-</p>
-<?php
-$fichierSource = "raisins.jpg";
+</p></div>
+<?php ?>
+<!--$fichierSource = "raisins.jpg";
 
 $largeurDestination = 200;
 $hauteurDestination = 150;
@@ -81,6 +81,8 @@ $miniature = "mini_$fichierSource";
 ImageJpeg ($im, $miniature);
 echo'<img src="$miniature"/>';
 ?>
-</div>
+</div> */
+
 <?php
 $query->CloseCursor();
+?>

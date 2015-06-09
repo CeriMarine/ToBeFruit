@@ -37,17 +37,17 @@ if ($id==0) {
 
 
         ?>
-        <form method="post">
+        <form action="" method="post">
         <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-        <input id="search" type="text" placeholder="Taper votre recherche"/>
+        <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
         <input type="submit" name="submit" value="Go!"><br>
         </form>
 
         <?php
 
-            if(isset($_POST['submit'])){
-
-                $search = mysql_real_escape_string(htmlspecialchars(trim($_POST['search'])));
+            if(isset($_POST['search'])){
+                echo "-";
+                $search = addslashes(htmlspecialchars(trim($_POST['search'])));
 
                 if(empty($search)){
 

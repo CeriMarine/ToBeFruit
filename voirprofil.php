@@ -120,7 +120,7 @@ switch($action)
         <label>
         Supprimer l\'avatar<input id="supavatar" type="checkbox" name="delete" value="Delete" /></label>
         Avatar actuel :
-        <img src="./images/avatars/'.$data['membre_avatar'].'"
+        <img class="photoprofil" src="./images/avatars/'.$data['membre_avatar'].'"
         alt="pas d avatar" />
 
         <br /><br />

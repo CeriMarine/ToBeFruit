@@ -134,7 +134,7 @@ else
 
         //Détails sur le membre qui a posté
         echo'<tr><td>
-         <img src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
+         <img class="phototopic" src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
          <br />Membre inscrit le '.date('d/m/Y',$data['membre_inscrit']).'
          <br />Messages : '.$data['membre_post'].'<br />
          Localisation : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</td>';

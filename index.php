@@ -68,7 +68,7 @@
 
             {
 
-                document.write('<a href="#" onclick="ImgDest();return(false)"><img src="http://44.lepanierdesfamilles.com/2655-large_default/poireaux-lot-de-3-kg.jpg" border="0" alt="Menu" name="defil" /></a>');
+                document.write('<a href="#" onclick="ImgDest();return(false)"><img class="photoaccueil" src="http://44.lepanierdesfamilles.com/2655-large_default/poireaux-lot-de-3-kg.jpg" border="0" alt="Menu" name="defil" /></a>');
 
                 defilimg()
 
@@ -78,7 +78,7 @@
 
             {
 
-                document.write('<a href="Profil.php"><img src="http://44.lepanierdesfamilles.com/2655-large_default/poireaux-lot-de-3-kg.jpg" border="0" /></a>')
+                document.write('<a href="Profil.php"><img class="photoaccueil" src="http://44.lepanierdesfamilles.com/2655-large_default/poireaux-lot-de-3-kg.jpg" border="0" /></a>')
 
             }
 

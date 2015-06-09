@@ -67,7 +67,7 @@ echo'<p><a href="./messagesprives.php?action=repondre&amp;dest='.$data['mp_exped
     <?php
 
     //Ici des infos sur le membre qui a envoyé le mp
-    echo'<p><img src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
+    echo'<p><img class="phototopic" src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
     <br />Membre inscrit le '.date('d/m/Y',$data['membre_inscrit']).'
     <br />Messages : '.$data['membre_post'].'
     <br />Localisation : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</p>
