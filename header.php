@@ -31,11 +31,39 @@ if ($id==0) {
 <div id="bandelogo">
 
     <table>
+        <?php
+
+        include 'functions.php';
+
+
+        ?>
+        <form method="post">
         <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-        <!a href="Recherche.php"><input id="search" type="search" placeholder="Rechercher un membre"/><br><!/a>
-       <!-- <input id="search" type="search" placeholder="Rechercher un membre"/><br> -->
-        <?php //include('Recherche.php');
-        //ça marche pas !!!!
+        <input id="search" type="text" placeholder="Taper votre recherche"/>
+        <input type="submit" name="submit" value="Go!"><br>
+        </form>
+
+        <?php
+
+            if(isset($_POST['submit'])){
+
+                $search = mysql_real_escape_string(htmlspecialchars(trim($_POST['search'])));
+
+                if(empty($search)){
+
+                    echo '<span class="erreur">Veuillez remplir ce champ</span>';
+                } else if(strlen($search)==1){
+
+                    echo '<span class="erreur">Votre mot-clé de recherche est trop court</span>';
+                } else{
+
+                    results($search);
+
+                }
+
+            }
+
+
             ?>
 
         <h3><br>BIENVENUE !</h3>
@@ -64,7 +92,13 @@ if ($id==0) {
 
                 <table>
                     <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-                    <input id="search" type="search" placeholder="Rechercher un produit"/><br>
+                    <input id="search" type="search" placeholder="Taper votre recherche"/>
+                    <input type="submit" name="submit" value="Go!"><br><br>
+
+                    <?php
+
+
+                    ?>
 
                     <h3><br>BIENVENUE !</h3>
                     <p><br>Nous sommes une association à but non lucratif. Notre objectif est d'offrir aux particuliers des fruits et légumes
