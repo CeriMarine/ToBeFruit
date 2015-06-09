@@ -26,7 +26,7 @@ require('config.php');
     echo $nom;
 
     $sql=("SELECT * FROM Annonce WHERE Product LIKE '%$nom%'");
-    $request=$bdd->query($sql);
+    $request=$db->query($sql);
     while($ann=$request->fetch()){
         $idUsers_ann=$ann['id_Users'];
 

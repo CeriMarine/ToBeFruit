@@ -80,7 +80,7 @@ require('config.php');
                         <option> Choisir</option>
                         <?php
                         $sql = 'SELECT * FROM Product';
-                        $requet = $bdd->query($sql);
+                        $requet = $db->query($sql);
                         while ($prod = $requet->fetch()) {
 
                             ?>
