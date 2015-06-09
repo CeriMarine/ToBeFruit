@@ -131,7 +131,8 @@ require('config.php');
 
         if (isset($_POST['register'])) {
 
-            $sql1 = 'INSERT INTO annonce VALUES ("","' . $_POST['description'] . '","' . $_POST['Product'] . '","' . $_POST['prix'] . '",
+
+            $sql1 = 'INSERT INTO annonce VALUES (" '.$id.' ","' . $_POST['description'] . '","' . $_POST['Product'] . '","' . $_POST['prix'] . '",
                 "' . $_POST['poid'] . '","' . $_POST['date'] . '")';
             $requet1 = $bdd->query($sql1);
 

@@ -5,6 +5,15 @@
  * Date: 30/05/2015
  * Time: 05:08
  */
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+</head>
+<body>
+<?php
 include("header.php");
 
 $membre = $id;
@@ -40,7 +49,12 @@ echo'Vous êtes inscrit depuis le
        <br /><br />'
     ?>
 
-       <a href="voirprofil.php?m= <?php echo $id; ?>&action=modifier"><input type="submit" name="modifier les informations" value="modifier les informations" /></a></div>';
+       <a href="voirprofil.php?m= <?php echo $id; ?>&action=modifier"><input type="submit" name="modifier les informations" value="modifier les informations" /></a>';
 
+        <p><a href="Achat.php">Mes achats en cours ou effectué</a></p>
+        <p><a href="Vente.php">Mes ventes</a> </p></div>
 <?php
 $query->CloseCursor();
+?>
+</body>
+</html>

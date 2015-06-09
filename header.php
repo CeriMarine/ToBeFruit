@@ -8,6 +8,9 @@
 session_start();
 include("includes/identifiants.php");
 include("includes/debut.php");
+
+include("./includes/functions.php");
+include("./includes/constants.php");
 ?>
 <link rel="stylesheet" href="css\style.css" type="text/css" />
 <meta charset="UTF-8">
@@ -21,7 +24,7 @@ if ($id==0) {
 <nav id="navbar">
     <ul>
         <li><a href="index.php">ACCUEIL</a></li>
-            <li><a href="Annonces.php">ANNONCES</a></li>
+            <li><a href="debannonce.php">ANNONCES</a></li>
             <li><a href="fofo.php">FORUM</a></li>
             <li><a href="faq1.php">FAQ</a></li>
     </ul>
@@ -31,7 +34,7 @@ if ($id==0) {
 <div id="bandelogo">
 
     <table>
-        <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
+        <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/>
         <input id="search" type="search" placeholder="Rechercher un membre"/><br>
 
         <h3><br>BIENVENUE !</h3>
@@ -51,7 +54,7 @@ if ($id==0) {
                         <li><a href="Transaction.php">TRANSACTION</a></li>
                         <li><a href="debannonce.php">ANNONCES</a></li>
                         <li><a href="fofo.php">FORUM</a></li>
-                        <li><a href="FAQ.php">FAQ</a></li>
+                        <li><a href="faq1.php">FAQ</a></li>
                 </ul>
 
             </nav>
@@ -59,7 +62,7 @@ if ($id==0) {
             <div id="bandelogo">
 
                 <table>
-                    <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
+                    <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/>
                     <input id="search" type="search" placeholder="Rechercher un produit"/><br>
 
                     <h3><br>BIENVENUE !</h3>

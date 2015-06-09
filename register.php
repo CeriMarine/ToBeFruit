@@ -127,13 +127,6 @@ if (!preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $email) ||
     $i++;
 }
 
-//Vérification de l'Adresse
-/*if (!preg_match("#^[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]{2,}\.[a-z]{2,4}$#", $msn) && !empty($msn))
-{
-    $msn_erreur = "Votre adresse MSN n'a pas un format valide";
-    $i++;
-}*/
-
 //Vérification de la signature
 if (strlen($signature) > 200)  //la longueur
 {
@@ -182,8 +175,8 @@ if (!empty($_FILES['avatar']['size']))
 if ($i==0) // Pas d'erreur (i s'incrémente à chaque erreur)
 {
     echo'<h1>Inscription terminée</h1>';
-    echo'<p>Bienvenue '.stripslashes(htmlspecialchars($_POST['pseudo'])).' vous êtes maintenant inscrit sur le forum</p>'
-	/*<p>Cliquez <a href="./fofo.php">ici</a> pour revenir à la page d accueil</p>'*/;
+    echo'<p>Bienvenue '.stripslashes(htmlspecialchars($_POST['pseudo'])).' vous êtes maintenant inscrit sur le site</p>';
+    echo'<meta http-equiv="refresh" content="1;URL=index.php">';
 
     //La ligne suivante sera commentée plus bas
     $nomavatar=(!empty($_FILES['avatar']['size']))?move_avatar($_FILES['avatar']):''; //fct move_avatar: déplacer l'avatar qui a été uploadé

@@ -1,41 +1,49 @@
-
 <?php
-require('config.php');
+/**
+ * Created by PhpStorm.
+ * User: Evy
+ * Date: 07/06/2015
+ * Time: 20:00
+ */
+include('header.php');
+
 
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title>To Be Fruit</title>
-
-</head>
-<header>
-    <?php
-    include('header.php');
-    ?>
-
-</header>
 <body>
 <div class="principal">
 
 
     <?php
+    $query1=$db->prepare('SELECT * FROM transactions WHERE id_acheteur=:id');
+    $query1->bindValue(':id',$id,PDO::PARAM_INT);
+    $query1->execute();
+    $data1=$query1->fetch();
+    $acheteur=$data1['id_acheteur'];
 
-    $nom=$_GET['produit'];
-    echo $nom;
+    if(empty($acheteur)){
+        echo"<p>Vous n'avez pas d'achat en cours.</p>";
+    }
+    else{
+    while($data1=$query1->fetch()){
+        $idannonce=$data1['id_annonce'];
 
-    $sql=("SELECT * FROM Annonce WHERE Product LIKE '%$nom%'");
-    $request=$bdd->query($sql);
-    while($ann=$request->fetch()){
+
+    $query2=$db->prepare('SELECT * FROM annonce WHERE id_annonce=:idannonce');
+    $query2->bindValue(':idannonce',$idannonce,PDO::PARAM_INT);
+    $query2->execute();
+
+        $ann=$query2->fetch();
         $idUsers_ann=$ann['id_Users'];
 
-?>
+        echo"<p>Vous vous êtes intéressé à cette annonce:</p>";
+        ?>
 
         <table id="anoncadre">
-            <form action="AnalyseTransaction.php" method="POST">
+            <form action="AnalyseTransaction.php" method="get">
                 <td>
-                    <?php $query=$db->prepare('SELECT membre_id, membre_pseudo, membre_inscrit, membre_avatar, membre_localisation, membre_post, membre_signature
+                    <?php
+                    $query=$db->prepare('SELECT membre_id, membre_pseudo, membre_inscrit, membre_avatar, membre_localisation, membre_post, membre_signature
                     FROM membres
                     WHERE membre_id =:idUsers_ann');
                     $query->bindValue(':idUsers_ann',$idUsers_ann,PDO::PARAM_INT);
@@ -58,20 +66,15 @@ require('config.php');
                     <p><?= $ann['Description']; ?> </p>
                     <?php
                     $_SESSION['transaction']='acheter'; /*Valeur de $transaction dans l'url*/
-                    ?>
 
-                <input type="submit" id="achat" value="Acheter" name="acheter"/>
-                <input type="hidden" name="monannonce" value="<?php echo $ann['id_annonce']; ?>"
+                    ?>
 
                 </td>
             </form>
         </table>
     <?php
-    }
+    }}
     ?>
 </div>
 </body>
-<footer>
 
-</footer>
-</html>
