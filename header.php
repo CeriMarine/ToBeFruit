@@ -34,8 +34,34 @@ if ($id==0) {
 <div id="bandelogo">
 
     <table>
-        <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/>
-        <input id="search" type="search" placeholder="Rechercher un membre"/><br>
+
+        <form method="post">
+            <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
+            <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/><br>
+        </form>
+
+        <?php
+
+            if(isset($_POST['search'])){
+                echo "-";
+                $search = addslashes(htmlspecialchars(trim($_POST['search'])));
+
+                if(empty($search)){
+
+                    echo '<span class="erreur">Veuillez remplir ce champ</span>';
+                } else if(strlen($search)==1){
+
+                    echo '<span class="erreur">Votre mot-clé de recherche est trop court</span>';
+                } else{
+
+                    results($search);
+
+                }
+
+            }
+
+
+            ?>
 
         <h3><br>BIENVENUE !</h3>
         <p><br>Nous sommes une association à but non lucratif. Notre objectif est d'offrir aux particuliers des fruits et légumes
@@ -62,8 +88,34 @@ if ($id==0) {
             <div id="bandelogo">
 
                 <table>
-                    <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/>
-                    <input id="search" type="search" placeholder="Rechercher un produit"/><br>
+
+                    <form method="post">
+                        <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
+                        <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/><br>
+                    </form>
+
+                    <?php
+
+                    if(isset($_POST['search'])){
+                        echo "-";
+                        $search = addslashes(htmlspecialchars(trim($_POST['search'])));
+
+                        if(empty($search)){
+
+                            echo '<span class="erreur">Veuillez remplir ce champ</span>';
+                        } else if(strlen($search)==1){
+
+                            echo '<span class="erreur">Votre mot-clé de recherche est trop court</span>';
+                        } else{
+
+                            results($search);
+
+                        }
+
+                    }
+
+
+                    ?>
 
                     <h3><br>BIENVENUE !</h3>
                     <p><br>Nous sommes une association à but non lucratif. Notre objectif est d'offrir aux particuliers des fruits et légumes
