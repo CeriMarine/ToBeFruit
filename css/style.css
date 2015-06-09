@@ -39,6 +39,12 @@ body{
 .principal p {
     text-align: center;
 }
+.principal1 p{
+    text-align: right;
+}
+.principal2 p{
+    text-align: center;
+}
 #annoncedefile{
     height: 470px;
     width: 100%;

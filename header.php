@@ -32,8 +32,10 @@ if ($id==0) {
 
     <table>
         <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-        <!--<input id="search" type="search" placeholder="Rechercher un membre"/><br> -->
-        <?php include('Recherche.php');
+        <!a href="Recherche.php"><input id="search" type="search" placeholder="Rechercher un membre"/><br><!/a>
+       <!-- <input id="search" type="search" placeholder="Rechercher un membre"/><br> -->
+        <?php //include('Recherche.php');
+        //ça marche pas !!!!
             ?>
 
         <h3><br>BIENVENUE !</h3>
