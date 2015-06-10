@@ -9,6 +9,13 @@ session_start();
 include("includes/identifiants.php");
 include("includes/debut.php");
 ?>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>To Be Fruit</title>
 <link rel="stylesheet" href="css\style.css" type="text/css" />
 <meta charset="UTF-8">
 

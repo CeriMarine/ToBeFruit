@@ -1,20 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Marine
- * Date: 14/05/15
- * Time: 21:26
- */
-
-?>
-
-<!DOCTYPE html>
-    <html>
-<head>
-
-
-    <title>To Be Fruit</title>
-    <?php
     include('header.php');
 
     ?>

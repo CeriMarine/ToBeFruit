@@ -41,7 +41,7 @@ if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer 
 	<label for="signature">Signature :</label><textarea cols="40" rows="4" name="signature" id="signature" placeholder="La signature est limitée à 200 caractères"></textarea>
 	</fieldset>
 	<p>Les champs précédés d\' un * sont obligatoires</p>
-	<p><input name="case"type="checkbox" value="ok"required/>Validation des<a href="CDU.php"><i><b><font color="#1e90ff" > conditions</a></i></b></font></p>
+	<p><input id="supavatar" name="case"type="checkbox" value="ok"required/>Validation des<a href="CDU.php"><i><b><font color="#1e90ff" > conditions</a></i></b></font></p>
 	<p><input type="submit" value="S\'inscrire" /></p></form>
 	</div>
 	</div>

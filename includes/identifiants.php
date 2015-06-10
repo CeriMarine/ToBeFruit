@@ -7,7 +7,7 @@
  */
                     /*Connexion MySQL*/
 $host='localhost';
-$nom_bd='ToBeFruit';
+$nom_bd='ToBeFruitb';
 $user='root';
 $mdp='root';
 
