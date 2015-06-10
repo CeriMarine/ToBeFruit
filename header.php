@@ -8,6 +8,9 @@
 session_start();
 include("includes/identifiants.php");
 include("includes/debut.php");
+
+include("./includes/functions.php");
+include("./includes/constants.php");
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +31,7 @@ if ($id==0) {
 <nav id="navbar">
     <ul>
         <li><a href="index.php">ACCUEIL</a></li>
-            <li><a href="Annonces.php">ANNONCES</a></li>
+            <li><a href="debannonce.php">ANNONCES</a></li>
             <li><a href="fofo.php">FORUM</a></li>
             <li><a href="faq1.php">FAQ</a></li>
     </ul>
@@ -38,16 +41,10 @@ if ($id==0) {
 <div id="bandelogo">
 
     <table>
-        <?php
 
-        include 'functions.php';
-
-
-        ?>
-        <form action="" method="post">
-        <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
-        <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
-        <input type="submit" name="submit" value="Go!"><br>
+        <form method="post">
+            <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
+            <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/><br>
         </form>
 
         <?php
@@ -98,16 +95,10 @@ if ($id==0) {
             <div id="bandelogo">
 
                 <table>
-                    <?php
 
-                    include 'functions.php';
-
-
-                    ?>
-                    <form action="" method="post">
-                        <input id="imagesearch" type="image" src="magnifying%20glass42.png" value="search"/>
+                    <form method="post">
                         <input id="search" name="search" type="text" placeholder="Taper votre recherche"/>
-                        <input type="submit" name="submit" value="Go!"><br>
+                        <input id="imagesearch" type="image" src="images/magnifier13.png" value="search"/><br>
                     </form>
 
                     <?php

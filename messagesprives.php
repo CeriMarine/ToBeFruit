@@ -70,7 +70,7 @@ echo'<p><a href="./messagesprives.php?action=repondre&amp;dest='.$data['mp_exped
     echo'<p><img class="phototopic" src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
     <br />Membre inscrit le '.date('d/m/Y',$data['membre_inscrit']).'
     <br />Messages : '.$data['membre_post'].'
-    <br />Localisation : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</p>
+    <br />Code Postal : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</p>
     </td><td>';
 
     echo code(nl2br(stripslashes(htmlspecialchars($data['mp_text'])))).'
@@ -134,8 +134,8 @@ case "nouveau": //Nouveau mp
 //---------------------------
 
     case "repondre": //On veut répondre
-        /*echo'<p><i>Vous êtes ici</i> : <a href="./fofo.php">Index du forum</a> --> <a href="./messagesprives.php">Messagerie privée</a> --> Ecrire un message</p>';*/
-        echo '<h1>Répondre à un message privé</h1><br /><br />';
+
+        echo'<h1>Répondre à un message privé</h1><br /><br />';
 
         $dest = (int) $_GET['dest'];
         ?>

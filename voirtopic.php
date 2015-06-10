@@ -137,7 +137,7 @@ else
          <img class="phototopic" src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
          <br />Membre inscrit le '.date('d/m/Y',$data['membre_inscrit']).'
          <br />Messages : '.$data['membre_post'].'<br />
-         Localisation : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</td>';
+         Code Postale : '.stripslashes(htmlspecialchars($data['membre_localisation'])).'</td>';
 
         //Message
         echo'<td>'.code(nl2br(stripslashes(htmlspecialchars($data['post_texte'])))).'

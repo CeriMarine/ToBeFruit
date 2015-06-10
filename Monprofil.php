@@ -5,6 +5,15 @@
  * Date: 30/05/2015
  * Time: 05:08
  */
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profil</title>
+</head>
+<body>
+<?php
 include("header.php");
 
 $membre = $id;
@@ -45,7 +54,10 @@ echo'Vous êtes inscrit depuis le
        et vous avez posté <strong>'.$data['membre_post'].'</strong> messages
        <br /><br />'
     ?>
-</p></div>
+</p>
+
+    <p><a href="Achat.php">Mes achats en cours ou effectué</a></p>
+    <p><a href="Vente.php">Mes ventes</a> </p></div>
 <?php ?>
 <!--$fichierSource = "raisins.jpg";
 
@@ -77,12 +89,23 @@ ImageCopyResampled($im, $source, 8, 8, 0, 0, $largeurDestination-(2*8), $hauteur
 
 ImageString($im, 0, 12, $hauteurDestination-18, "$fichierSource - ($largeurSource x $hauteurSource)", $blanc);
 
+<<<<<<< HEAD
+       <a href="voirprofil.php?m=&action=modifier"><input type="submit" name="modifier les informations" value="modifier les informations" /></a>';
+=======
 $miniature = "mini_$fichierSource";
 ImageJpeg ($im, $miniature);
 echo'<img src="$miniature"/>';
 ?>
 </div> */
+>>>>>>> 03b71b5ad8da444a1aee54bb03c304be0e0e4162
 
+        <p><a href="Achat.php">Mes achats en cours ou effectué</a></p>
+        <p><a href="Vente.php">Mes ventes</a> </p></div>
 <?php
 $query->CloseCursor();
 ?>
+</body>
+</html>
+=======
+?>
+>>>>>>> 03b71b5ad8da444a1aee54bb03c304be0e0e4162

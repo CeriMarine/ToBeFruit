@@ -14,19 +14,7 @@
     <meta charset="UTF-8">
 <?php
 //Si le titre est indiqué, on l'affiche entre les balises <title>
-echo (!empty($titre))?'<title>'.$titre.'</title>':'<title> Forum </title>';
-
-/*façon plus rapide d'écrire:
-<?php
-if (!empty($titre))
-{
-    echo '<title> '.$titre.' </title>';
-}
-else //Sinon, on écrit forum par défaut
-{
-    echo '<title> Forum </title>';
-}
-?>*/
+echo (!empty($titre))?'<title>'.$titre.'</title>':'<title> To Be Fruit </title>';
 
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
@@ -39,9 +27,7 @@ $lvl=(isset($_SESSION['level']))?(int) $_SESSION['level']:1;
 $id=(isset($_SESSION['id']))?(int) $_SESSION['id']:0;
 $pseudo=(isset($_SESSION['pseudo']))?$_SESSION['pseudo']:'';
 
-//On inclue les 2 pages restantes
-include("./includes/functions.php");
-include("./includes/constants.php");
+
 ?>
 <?php
 $balises=(isset($balises))?$balises:0;
