@@ -89,25 +89,28 @@ require('config.php');
 
 
 
-<<br>
-                <div class="transactprod">
+<br>
+                <br>
+                <br>
+                <br>
+                <div class="transact">
 
                     <label for="prix"><strong><font color="#f5f5f5">Prix : </font></strong></label>
-                    <input type="text" name="prix" id="prix"/>
+                    <input type="text" name="prix" id="prix" placeholder="0,00 €"/>
 </div>
-            <div class="transactprod">
+            <div class="transact">
 
                     <label for="poid"><strong><font color="#f5f5f5">Poids : </font></strong></label>
-                    <input type="text" name="poid" id="poid"/>
+                    <input type="text" name="poid" id="poid" placeholder="0,00 kg"/>
 
 </div>
-                <div class="transactprod">
+                <div class="transact">
 
                     <label for="date"><strong><font color="#f5f5f5">Date de la ceuillette : </font></strong></label>
-                    <input type="text" name="date" id="date"/>
+                    <input type="text" name="date" id="date" placeholder="yyyy-mm-dd"/>
 
 </div>
-            <div class="transactprod">
+            <div class="transact">
 
 
                     <label for="description"><strong><font color="#f5f5f5">Description : </font></strong></label>
@@ -115,10 +118,15 @@ require('config.php');
 
 </div>
 
+                <br>
+                <br>
+                <br>
+                <div class="transaction1">
             <input type="submit" name="register" value="Mettre en vente"/>
-
+                </div>
+                <div class="transaction">
             <input type="submit" name="registers" value="Proposer à l'échange"/>
-
+                </div>
         </form>
 
         <?php
