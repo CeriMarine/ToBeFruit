@@ -115,7 +115,7 @@
 
     </script>
     </div>
-<p>Bienvenue
+<p> Amoureux du potager vous trouverez ici votre bonheur au Paradis des Fruits et Légumes!! </p>
 </div>
 
 </body>
