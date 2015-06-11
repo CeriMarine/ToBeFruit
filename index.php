@@ -17,7 +17,7 @@
 
             i0 = new Image;
 
-            i0.src = 'http://44.lepanierdesfamilles.com/2655-large_default/poireaux-lot-de-3-kg.jpg';
+            i0.src = 'http://www.google.fr/url?source=imglanding&ct=img&q=http://i01.i.aliimg.com/photo/v0/110871385/Mangosteen_Fresh_Fruit_from_Thailand_100_.jpg&sa=X&ved=0CAkQ8wc4QWoVChMIpsSVouWExgIVylUUCh0pXgD3&usg=AFQjCNFFLtaf95w_yUCXJDANl6AYIjd-cA';
 
             SiClickGoTo[0] = "Profil.php";
 
@@ -26,7 +26,7 @@
             i1 = new Image;
 
 
-            i1.src = 'http://www.wallpaper-gratuit.eu/images/1786/bigth_1786.jpg';
+            i1.src = 'http://www.google.fr/url?source=imglanding&ct=img&q=http://www.funactu.fr/wp-content/uploads/2014/10/banane1-fruit.png&sa=X&ved=0CAkQ8wdqFQoTCIDCk5PkhMYCFUG-FAodygIASA&usg=AFQjCNHO_NU13gVG-vcjjx7uYY7hsrlZBw';
 
             SiClickGoTo[1] = "Profil.php";
 
@@ -34,7 +34,7 @@
 
             i2 = new Image;
 
-            i2.src = 'http://www.lesfoodies.com/_recipeimage/86055/le-gers-ou-les-tourins-le-tourin-tomate-fraiche-si-possible.jpg';
+            i2.src = 'http://www.google.fr/url?source=imglanding&ct=img&q=http://sciences.blogs.liberation.fr/.a/6a00e5500b4a648833016767e98d24970b-pi&sa=X&ved=0CAkQ8wdqFQoTCMDxitHlhMYCFQQ9FAodobcAFw&usg=AFQjCNHHi4RMakcBNtioiEP-PzPkkb6LVQ';
 
             SiClickGoTo[2] = "Profil.php";
 
@@ -115,7 +115,7 @@
 
     </script>
     </div>
-
+<p>Bienvenue
 </div>
 
 </body>

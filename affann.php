@@ -42,7 +42,7 @@ require('config.php');
                     $query->execute();
                     $data=$query->fetch();
 
-                    echo '<img src="./images/avatars/'.$data['membre_avatar'].'" alt="" />
+                    echo '<img class="photoprofil" src="./images/avatars/'.$data['membre_avatar'].'" alt="" /><br>
 
                     <strong><a href="./voirprofil.php?m='.$data['membre_id'].'&amp;action=consulter">
                      '.stripslashes(htmlspecialchars($data['membre_pseudo'])).'</a></strong>

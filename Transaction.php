@@ -65,18 +65,12 @@ require('config.php');
         <form action="Transaction.php" method="post">
 
 
-            <table>
+            <div class="transactprod">
 
-                <tr>
 
-                    <td><label for="description"><strong>Description :</strong></label></td>
-                    <td><textarea name="description" id="description"></textarea></td>
-
-                </tr>
-
-                <tr>
-                    <td><label for="Product"><strong>Produit :</strong></label></td>
-                    <td><select type="text" name="Product" id="Product"/>
+                    <label for="Product"><strong><font color="#f5f5f5">Produit : </font></strong></label>
+                    <select type="text" name="Product" id="Product"/>
+                        <div class="transactprod">
                         <option> Choisir</option>
                         <?php
                         $sql = 'SELECT * FROM Product';
@@ -85,39 +79,41 @@ require('config.php');
 
                             ?>
 
-
+</div>
                             <option name="produit"><?= $prod['Nom']; ?></option>
                         <?php }// endforeach;
                         ?>
                         <option> Autre ...</option>
                         </select>
-                    </td>
-
-                </tr>
-
-                <tr>
-
-                    <td><label for="prix"><strong>Prix :</strong></label></td>
-                    <td><input type="text" name="prix" id="prix"/></td>
-
-                </tr>
-
-                <tr>
-
-                    <td><label for="poid"><strong>Poids :</strong></label></td>
-                    <td><input type="text" name="poid" id="poid"/></td>
-
-                </tr>
-
-                <tr>
-
-                    <td><label for="date"><strong>Date de la ceuillette :</strong></label></td>
-                    <td><input type="text" name="date" id="date"/></td>
-
-                </tr>
 
 
-            </table>
+
+
+<<br>
+                <div class="transactprod">
+
+                    <label for="prix"><strong><font color="#f5f5f5">Prix : </font></strong></label>
+                    <input type="text" name="prix" id="prix"/>
+</div>
+            <div class="transactprod">
+
+                    <label for="poid"><strong><font color="#f5f5f5">Poids : </font></strong></label>
+                    <input type="text" name="poid" id="poid"/>
+
+</div>
+                <div class="transactprod">
+
+                    <label for="date"><strong><font color="#f5f5f5">Date de la ceuillette : </font></strong></label>
+                    <input type="text" name="date" id="date"/>
+
+</div>
+            <div class="transactprod">
+
+
+                    <label for="description"><strong><font color="#f5f5f5">Description : </font></strong></label>
+                    <textarea name="description" id="description"></textarea>
+
+</div>
 
             <input type="submit" name="register" value="Mettre en vente"/>
 

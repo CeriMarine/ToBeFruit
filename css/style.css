@@ -332,7 +332,7 @@ div.annoncedefile a img {
     margin-left: 50px;
     margin-right: 50px;
     margin-top : 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
 }
 .imagefruit{
@@ -497,10 +497,15 @@ div.annoncedefile a img {
 
 .phototopic{
     width: 100px;
-    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .photoaccueil {
     width: 300px;
     margin-left: 2%;
 }
+
+.transactprod{
+    margin-left : 2%;
+}
+.transact

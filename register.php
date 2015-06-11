@@ -34,7 +34,7 @@ if (empty($_POST['pseudo'])) // Si on la variable est vide, on peut considérer 
 	</fieldset>
 
 	<fieldset><legend>Informations supplémentaires</legend>
-	<!--Modiff--> <label for="date">* Date de naissance :</label><input type="text" name="date" id="date" required/><br />
+	<!--Modiff--> <label for="date">* Date de naissance :</label><input type="text" name="date" id="date" placeholder="yyyy-mm-dd" required/><br />
 
 
 	<br /><label for="avatar">Choisissez votre avatar :</label><input type="file" name="avatar" id="avatar" /><br />(Taille max : 500Ko)<br />
